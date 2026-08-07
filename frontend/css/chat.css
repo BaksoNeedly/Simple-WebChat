@@ -1,0 +1,247 @@
+:root {
+    --padding: 30px;
+    --sidebar-padding: 30px;
+    --gap: 16px;
+    --border-radius: 10px;
+    --height: 100dvh;
+}
+
+.sidebar {
+    --sidebar-padding: 30px;
+    width: 100%;
+    height: 100%;
+    min-width: 200px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: var(--height);
+    border-right: 1px solid lightgray;
+    padding: var(--sidebar-padding);
+    overflow-x: auto;
+}
+
+.groups-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.group-chat {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: black;
+    padding: 16px 10px;
+    border-radius: 10px;
+}
+
+.group-chat:hover{
+    background-color: rgb(196, 220, 254);
+    color: rgb(42, 41, 41);
+}
+
+.users-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 1px solid lightgray;
+    padding: var(--sidebar-padding);
+    margin-left: calc(0px - var(--sidebar-padding));
+    margin-right: calc(0px - var(--sidebar-padding));
+    margin-bottom: calc(0px - var(--sidebar-padding));
+    overflow-y: auto;
+}
+
+.user-2-profile-icon {
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 100%;
+}
+
+.user-2-chat {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: black;
+    padding: 16px 10px;
+    border-radius: 10px;
+}
+
+.user-2-chat:hover {
+    background-color: lightblue;
+}
+
+.user-profile {
+    margin-top: auto;
+    margin-left: calc(0px - var(--sidebar-padding));
+    margin-right: calc(0px - var(--sidebar-padding));
+    margin-bottom: calc(0px - var(--sidebar-padding));
+
+    padding: var(--sidebar-padding);
+    border-top: 1px solid lightgray;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.container {
+    display: flex;
+    overflow-y: hidden;
+}
+
+.chat-area {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: var(--height);
+}
+
+.chat-header {
+    padding: var(--padding);
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: lightblue;
+}
+
+.chat-footer {
+    margin-top: auto;
+    padding: calc(var(--padding) - 20px);
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.message-area {
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    overflow-y: auto;
+}
+
+.message-1 {
+    display: flex;
+    justify-content: right;
+}
+
+.message-meta {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    min-width: 0;
+    gap: 5px;
+}
+
+.user-profile-icon {
+    background-color: gray;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-header {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.message-username {
+    font-weight: bold;
+}
+
+.message-content {    
+    background-color: rgb(132, 199, 255);
+    padding: 10px;    
+    border-radius: var(--border-radius);
+    overflow-wrap: anywhere;
+    width: fit-content;
+}
+
+.message-time {
+    display: flex;
+    justify-content: right;
+    color: gray;
+    font-size: 13px;
+}
+
+.message-2 {
+    display: flex;
+    align-items: center;
+    gap: var(--gap)
+}
+
+.join-message, 
+.disconnect-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    white-space: nowrap;
+}
+
+.join-message p, 
+.disconnect-message p {
+    color: gray;
+    font-size: 13px;
+}
+
+.join-message hr, 
+.disconnect-message hr {
+    width: 100%;
+}
+
+.new-chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 0.5 artinya tingkat kegelapan 50% */
+}
+
+.new-chat-package {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    background: white;
+    padding: var(--padding);
+    border-radius: 10px;
+    width: 400px;
+}
+
+.new-chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-chat-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.overlay-new-chat .divider {
+    margin: 0 calc(0px - var(--padding));
+}
+
+.new-chat-footer {
+    display: flex;
+    gap: var(--gap);
+    justify-content: right;
+}

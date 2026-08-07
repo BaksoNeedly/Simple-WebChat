@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/success.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <div class="circle-check">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h2>Success!</h2>
+            <p>{{LABEL}}</p>
+        </div>
+        <div class="divider">
+            <hr>
+        </div>
+        <div class="user-details">
+            <div class="icon-package">
+                <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-icon lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+            </div>
+            <div class="user-info">
+                <h5>Username</h5>
+                <p>{{USERNAME}}</p>
+            </div>            
+        </div>
+        <div class="divier">
+            <hr>
+        </div>
+        <div class="user-details">
+            <div class="icon-package">
+                <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+            </div>
+            <div class="user-info">
+                <h5>Email</h5>
+                <p>{{EMAIL}}</p>
+            </div>            
+        </div>
+        <div class="divier">
+            <hr>
+        </div>
+        <form class="action-buttons">
+            <button class="button-1">Verify Email</button>
+            <button class="button-2">Go to Login</button>
+        </form>        
+    </div>
+</body>

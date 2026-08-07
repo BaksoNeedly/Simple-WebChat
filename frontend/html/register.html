@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class=card>
+        <div class="header">
+            <h2 class="title">Register</h2>
+            <p id="label" class="sub-title label">Register your account</p>
+        </div>
+        <div class="divider">
+            <hr>
+        </div>
+        <form id="register-form" class="card-form register-form">
+            <div class="field">
+                <p>Username</p>
+                <input id="username" class="input-1 username" placeholder="Enter your username">
+            </div>
+            <div class="field">
+                <p>Email</p>
+                <input id="email" class="input-1 email" placeholder="Enter your email">
+            </div>
+            <div class="field">
+                <p>Password</p>
+                <input id="password" class="input-1 password" type="password" placeholder="Enter your password">
+            </div>
+            <div class="field">
+                <p>Confirm Password</p>
+                <input id="confirm-password" class="input-1 confirm-password" type="password" placeholder="Confirm your password">
+            </div>
+            
+            <div class="action-buttons">
+                <button class="button-1">Register</button>
+            </div>                
+        </form>
+        <div class="or-divider">
+            <hr>
+            <p>OR</p>
+            <hr>
+        </div>
+        <button class="button-2 login-btn">Already have an account? Log in</button>
+    </div>
+    <script type="module" src="../js/auth/register/Register.js"></script>
+</body>
+</html>
