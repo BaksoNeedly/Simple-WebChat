@@ -12,3 +12,6 @@ venv/
 # Ignore OS system files
 .DS_Store
 Thumbs.db
+
+log_.txt
+log.txt
