@@ -44,24 +44,39 @@ class HttpRouterRegistrar:
 
         self._router.post("/chat", UserController.chat)
         self._router.post("/chat/new", UserController.new_chat)
-        self._router.get("/chat/load", UserController.load_chat)
 
+        self._router.get("/js/core/WebSocketClient.js", lambda request, client_socket: AssetController.serve_response("WebSocketClient.js", "frontend/js/core/"))
         self._router.get("/js/chat/Chat.js", lambda request, client_socket: AssetController.serve_response("Chat.js", "frontend/js/chat/"))
         self._router.get("/js/chat/ChatApp.js", lambda request, client_socket: AssetController.serve_response("ChatApp.js", "frontend/js/chat/"))
         self._router.get("/js/chat/ChatUI.js", lambda request, client_socket: AssetController.serve_response("ChatUI.js", "frontend/js/chat/"))
-        self._router.get("/js/chat/WebSocketClient.js", lambda request, client_socket: AssetController.serve_response("WebSocketClient.js", "frontend/js/chat/"))
         self._router.get("/js/chat/NewChatUI.js", lambda request, client_socket: AssetController.serve_response("NewChatUI.js", "frontend/js/chat/"))
         self._router.get("/js/chat/SidebarUI.js", lambda request, client_socket: AssetController.serve_response("SidebarUI.js", "frontend/js/chat/"))
+        self._router.get("/js/chat/ChatService.js", lambda request, client_socket: AssetController.serve_response("ChatService.js", "frontend/js/chat/"))
+
         self._router.get("/js/chat/models/Connect.js", lambda request, client_socket: AssetController.serve_response("Connect.js", "frontend/js/chat/models/"))
-        self._router.get("/js/chat/models/User.js", lambda request, client_socket: AssetController.serve_response("User.js", "frontend/js/chat/models/"))
         self._router.get("/js/chat/packets/CreateRoom.js", lambda request, client_socket: AssetController.serve_response("CreateRoom.js", "frontend/js/chat/packets/"))
+        self._router.get("/js/chat/message/Message.js", lambda request, client_socket: AssetController.serve_response("Message.js", "frontend/js/chat/message/"))
+        self._router.get("/js/chat/message/MessageManager.js", lambda request, client_socket: AssetController.serve_response("MessageManager.js", "frontend/js/chat/message/"))
+
+        self._router.get("/js/chat/user/User.js", lambda request, client_socket: AssetController.serve_response("User.js", "frontend/js/chat/user/"))
+        self._router.get("/js/chat/user/UserService.js", lambda request, client_socket: AssetController.serve_response("UserService.js", "frontend/js/chat/user/"))
+        self._router.get("/js/chat/user/Contact.js", lambda request, client_socket: AssetController.serve_response("Contact.js", "frontend/js/chat/user/"))
+
+        self._router.get("/js/chat/room/Room.js", lambda request, client_socket: AssetController.serve_response("Room.js", "frontend/js/chat/room/"))
+        self._router.get("/js/chat/room/RoomManager.js", lambda request, client_socket: AssetController.serve_response("RoomManager.js", "frontend/js/chat/room/"))
+        
         self._router.get("/js/packets/NewChatPacket.js", lambda request, client_socket: AssetController.serve_response("NewChatPacket.js", "frontend/js/packets/"))
         self._router.get("/js/utils/TimeUtils.js", lambda request, client_socket: AssetController.serve_response("TimeUtils.js", "frontend/js/utils/"))
         self._router.get("/js/packets/websocket/MessagePacket.js", lambda request, client_socket: AssetController.serve_response("MessagePacket.js", "frontend/js/packets/websocket/"))
         self._router.get("/js/packets/websocket/JoinMessagePacket.js", lambda request, client_socket: AssetController.serve_response("JoinMessagePacket.js", "frontend/js/packets/websocket/"))
+        self._router.get("/js/packets/websocket/MessageHistoryPacket.js", lambda request, client_socket: AssetController.serve_response("MessageHistoryPacket.js", "frontend/js/packets/websocket/"))
 
 
         # Packets
         self._router.get("/js/packets/websocket/GlobalJoinPacket.js", lambda request, client_socket: AssetController.serve_response("GlobalJoinPacket.js", "frontend/js/packets/websocket/"))
         self._router.get("/js/packets/websocket/UpdateStatusPacket.js", lambda request, client_socket: AssetController.serve_response("UpdateStatusPacket.js", "frontend/js/packets/websocket/"))
         self._router.get("/js/packets/websocket/TotalUserPacket.js", lambda request, client_socket: AssetController.serve_response("TotalUserPacket.js", "frontend/js/packets/websocket/"))
+
+
+        # User
+        self._router.get("/user/profile", UserController.load_chat)

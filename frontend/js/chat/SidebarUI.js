@@ -28,13 +28,14 @@ export default class SidebarUI {
         );
     }
 
-    onClickUser(callback){
+    onClickRoom(callback){
         this.usersList.addEventListener(
             "click",
             (event) => {
                 const targetCard = event.target.closest(".user-2-chat");
                 if(targetCard){
-                    callback(new UserPacket(targetCard.querySelector(".user-2-name").textContent));
+                    const targetUsername = targetCard.querySelector(".user-2-name").textContent;
+                    callback(new UserPacket(targetUsername));
                 }
             }
         );
@@ -69,6 +70,16 @@ export default class SidebarUI {
         userStatus.textContent = "Offline";
         userStatus.style.color = "red";
         userDetails.appendChild(userStatus);
+    }
+
+    updateContactStatus(contact){
+        document.querySelectorAll(".user-2-chat").forEach(element => {
+            if(element.querySelector(".user-2-name").textContent === contact.getUsername()){
+                const status = element.querySelector(".user-2-status");
+                status.textContent = "ONLINE";
+                status.style.color = "lightgreen";
+            }
+        });
     }
 
     getUsername(){

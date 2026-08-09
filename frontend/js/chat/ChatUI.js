@@ -1,5 +1,6 @@
 import MessagePacket from "../packets/websocket/MessagePacket.js";
 import TimeUtils from "../utils/TimeUtils.js";
+import Message from "./message/Message.js";
 
 export default class ChatUI {
 
@@ -44,7 +45,7 @@ export default class ChatUI {
                     event.preventDefault();
                     const text = this.chatInput.value.trim();
                     if (text !== "") {
-                        callback(new MessagePacket(text, TimeUtils.getTimeStamp()));
+                        callback(new Message(text, TimeUtils.getTimeStamp()));
                     }
                 }
             }
@@ -54,7 +55,7 @@ export default class ChatUI {
             () => {
                 const text = this.chatInput.value.trim();
                 if (text !== "") {
-                    callback(new MessagePacket(text, TimeUtils.getTimeStamp()));
+                    callback(new Message(text, TimeUtils.getTimeStamp()));
                 }
             }
         );
@@ -82,7 +83,7 @@ export default class ChatUI {
         // message-time
         const messageTime = document.createElement("div");
         messageTime.classList.add("message-time");
-        messageTime.textContent = message.getTimeStamp();
+        messageTime.textContent = message.getTimestamp();
 
         // message-content with <p> tag
         const messageContent = document.createElement("div");
@@ -134,7 +135,7 @@ export default class ChatUI {
 
         const messageTime = document.createElement("div");
         messageTime.classList.add("message-time");
-        messageTime.textContent = message.getTimeStamp();
+        messageTime.textContent = message.getTimestamp();
 
         messageHeader.appendChild(messageUsername);
         messageHeader.appendChild(messageTime);

@@ -10,4 +10,8 @@ export default class TimeUtils {
             }
         )
     }
+
+    static getTimestamp(){
+        return Date.now();
+    }
 }

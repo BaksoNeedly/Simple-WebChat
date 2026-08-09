@@ -111,7 +111,7 @@ class HTTPServer:
         # print("HTTPSERVER: ", SessionManager.size(), "sessions.")
         # print(len(RouteManager.get_all()), "ROUTES")
         # print("PATHS:", paths)
-        # print("PATH:", request.get_path())
+        print("PATH:", request.get_path())
         # print("REQUEST:", request.get_body())
         # print("RESPONSE BODY:", response.decode().split("\r\n\r\n",1)[1])
         # print(request.get_data(), "\r\n")

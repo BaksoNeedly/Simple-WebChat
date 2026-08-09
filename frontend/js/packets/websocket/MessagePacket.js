@@ -27,7 +27,7 @@ export default class MessagePacket {
         return this.content;
     }
 
-    getTimeStamp(){
+    getTimestamp(){
         return this.timestamp;
     }
 

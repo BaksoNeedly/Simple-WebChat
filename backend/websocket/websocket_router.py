@@ -6,6 +6,7 @@ from ..packets.websocket.update_status_packet import UpdateStatusPacket
 from ..packets.websocket.join_message_packet import JoinMessagePacket
 from ..packets.websocket.total_user_packet import TotalUserPacket
 from ..packets.websocket.message_packet import MessagePacket
+from ..packets.websocket.message_history_packet import MessageHistoryPacket
 from ..chat.room.room_manager import RoomManager
 from ..user.user_manager import UserManager
 
@@ -71,13 +72,23 @@ class WebSocketRouter:
                     user.get_username()
                 )
 
-                for member in room.get_online_members():
-                    # Skip sender
-                    if member.get_username() == user.get_username():
-                        continue
+                print(room.get_members())
 
-                    # 3. FIXED: Check if RECIPIENT is currently viewing this room
+                for member in room.get_online_members():                    
                     if member.get_current_room_id() != room.get_id():
                         continue
 
+                    WebSocketBroadcaster.send(
+                        member.get_socket(), 
+                        MessageHistoryPacket(
+                            content,
+                            timestamp,
+                            user.get_username(),
+                            member.get_username()
+                        )
+                    )
+
+                    print(member.get_username())
+                    if member.get_username() == user.get_username():
+                        continue
                     WebSocketBroadcaster.send(member.get_socket(), packet)
