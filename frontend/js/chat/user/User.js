@@ -4,6 +4,7 @@ export default class User {
 
     #username;
     #contacts;
+    #currentRoom = null;
 
     constructor(
         username = "",
@@ -42,5 +43,13 @@ export default class User {
 
     getContact(username){
         return this.#contacts[username];
+    }
+
+    getCurrentRoom(){
+        return this.#currentRoom;
+    }
+
+    setCurrentRoom(room){
+        this.#currentRoom = room;
     }
 }

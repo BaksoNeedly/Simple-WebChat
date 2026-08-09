@@ -28,11 +28,7 @@ class WebSocketServer:
 
     @classmethod
     def handle(cls, client_socket: socket.socket, request: HTTPRequest):
-        
-        print("WEBSOCKET CONNECTED.")
-        
         WebSocketHandshake.perform(client_socket, request)        
-
         session = SessionManager.extract_session(request)
         if not session or not session.is_authenticated():
             print("Session not found or not authenticated.")
@@ -41,10 +37,10 @@ class WebSocketServer:
         session_id = session.get_id()
         user = User(client_socket, session)
         UserManager.set(user)
+        print(user.get_username(), "connected.")
     # try:
         while True:
             raw_frame = client_socket.recv(config.BUFSIZE)
-            print("Frame received!")
             if not raw_frame:
                 return
 

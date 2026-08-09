@@ -26,6 +26,7 @@ class WebSocketRouter:
         #     print("ping")
         #     return
 
+        current_room_id = user.get_current_room_id()
         match msg_type:
             case "global_join"|"ping":
                 WebSocketBroadcaster.send_to_all(UpdateStatusPacket(user.get_username()))
@@ -33,7 +34,6 @@ class WebSocketRouter:
                     len(UserManager.get_all())
                 ))
             case "join_message":
-                current_room_id = user.get_current_room_id()
                 if not current_room_id:
                     return
 
@@ -44,7 +44,9 @@ class WebSocketRouter:
                 packet = JoinMessagePacket(user.get_username())
 
                 for member in room.get_online_members():
-                    # Skip sending join notification back to sender
+                    if member.get_current_room_id() != room.get_id():
+                        continue
+
                     if member.get_username() == user.get_username():
                         continue
                     
@@ -58,7 +60,6 @@ class WebSocketRouter:
                 if content is None or timestamp is None:
                     return
 
-                current_room_id = user.get_current_room_id()
                 if not current_room_id:
                     return
 
@@ -72,23 +73,8 @@ class WebSocketRouter:
                     user.get_username()
                 )
 
-                print(room.get_members())
-
                 for member in room.get_online_members():                    
                     if member.get_current_room_id() != room.get_id():
                         continue
 
-                    WebSocketBroadcaster.send(
-                        member.get_socket(), 
-                        MessageHistoryPacket(
-                            content,
-                            timestamp,
-                            user.get_username(),
-                            member.get_username()
-                        )
-                    )
-
-                    print(member.get_username())
-                    if member.get_username() == user.get_username():
-                        continue
                     WebSocketBroadcaster.send(member.get_socket(), packet)

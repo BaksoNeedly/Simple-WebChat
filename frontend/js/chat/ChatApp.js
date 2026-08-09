@@ -56,15 +56,15 @@ export default class ChatApp {
         this.socket.onOpen = async () => {
             this.socket.sendData(new UpdateStatusPacket().toData());            
 
-            // // Clear any existing ping interval to avoid memory leaks on reconnect
-            // if (this.pingInterval) clearInterval(this.pingInterval);
+            // Clear any existing ping interval to avoid memory leaks on reconnect
+            if (this.pingInterval) clearInterval(this.pingInterval);
 
-            // this.pingInterval = setInterval(() => {
-            //     this.socket.sendData({
-            //         type: "ping"
-            //     });  
-            //     // console.log(RoomManager.getAll())
-            // }, 1000 * 1);
+            this.pingInterval = setInterval(() => {
+                this.socket.sendData({
+                    type: "ping"
+                });  
+                // console.log(RoomManager.getAll())
+            }, 1000 * 1);
 
         }
     }
@@ -89,16 +89,14 @@ export default class ChatApp {
                         this.sidebarUI.updateContactStatus(this.getUser().getContact(packet.getUsername()));
                     }
                     break;
-                case "message_history":
-                    const messageHistoryPacket = MessageHistoryPacket.fromData(data);
-                    const room = RoomManager.get(messageHistoryPacket.getSender());
-                    console.log("HISTORY: "+messageHistoryPacket.getSender());
-                    console.log("HISTORY: "+messageHistoryPacket.getReceiver());
-                    room.addMessage(Message.fromData(data));
-                    console.log("ROOM: " + room.getMessages());
-                    break;
                 case "message":
-                    this.chatUI.addReceivedMessage(Message.fromData(data));
+                    const message = Message.fromData(data);
+                    if(message.getSender() !== this.getUser().getUsername())
+                        this.chatUI.addReceivedMessage(Message.fromData(data));
+                    const room = this.getUser().getCurrentRoom();
+                    if(room){
+                        room.addMessage(message);
+                    }
                     break;
 
                 case "join_message":
@@ -145,15 +143,12 @@ export default class ChatApp {
                 this.chatUI.setTitle(packet.getUsername());
                 this.socket.sendData(new JoinMessagePacket().toData());
                 const room = RoomManager.get(packet.getUsername());
-                console.log(packet.getUsername());
-                console.log(room);
+                this.getUser().setCurrentRoom(room);
                 Object.entries(room.getMessages()).forEach(([key, message]) => {
                     if(message.getSender() === this.getUser().getUsername()){
-                        this.chatUI.addSentMessage(message);
-                    }else{
-                        this.chatUI.addReceivedMessage(message);
-                    }
-                });
+                        this.chatUI.addSentMessage(message);                        
+                    }else this.chatUI.addReceivedMessage(message);
+                })
             }
         });
 
