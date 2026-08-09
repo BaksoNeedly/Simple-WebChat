@@ -1,0 +1,14 @@
+# Ignore Python bytecode / cache
+__pycache__/
+*.pyc
+
+# Ignore environment files containing secrets
+.env
+
+# Ignore dependencies folder
+node_modules/
+venv/
+
+# Ignore OS system files
+.DS_Store
+Thumbs.db
