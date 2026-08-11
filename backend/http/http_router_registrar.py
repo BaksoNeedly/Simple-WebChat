@@ -80,3 +80,5 @@ class HttpRouterRegistrar:
 
         # User
         self._router.get("/user/profile", UserController.load_chat)
+
+        self._router.post("/upload", UserController.upload)

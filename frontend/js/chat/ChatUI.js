@@ -15,6 +15,8 @@ export default class ChatUI {
         this.messageArea = document.querySelector(".message-area");
 
         this.totalUser = document.querySelector(".total-user");
+
+        this.attachButton = document.querySelector(".attach-input");
     }
 
     show() {
@@ -85,15 +87,64 @@ export default class ChatUI {
         messageTime.classList.add("message-time");
         messageTime.textContent = message.getTimestamp();
 
-        // message-content with <p> tag
+        // append message-time first
+        messageMeta.appendChild(messageTime);
+
+        // --- TAMBAHAN: Logika untuk menambahkan file-box jika ada file ---
+        if (message.file) { // Asumsi ada properti file di objek message (misal: { name, size })
+            const fileBox = document.createElement("div");
+            fileBox.classList.add("file-box");
+
+            // file-content (Nama & Ukuran)
+            const fileContent = document.createElement("div");
+            fileContent.classList.add("file-content");
+
+            const fileName = document.createElement("p");
+            fileName.textContent = message.file.name;
+
+            const fileSize = document.createElement("p");
+            fileSize.textContent = message.file.size; // Contoh: "3 MB" atau formatBytes(message.file.size)
+
+            fileContent.appendChild(fileName);
+            fileContent.appendChild(fileSize);
+
+            // SVG Icon
+            const svgIcon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            svgIcon.setAttribute("class", "file-icon lucide lucide-file-icon lucide-file");
+            svgIcon.setAttribute("width", "24");
+            svgIcon.setAttribute("height", "24");
+            svgIcon.setAttribute("viewBox", "0 0 24 24");
+            svgIcon.setAttribute("fill", "none");
+            svgIcon.setAttribute("stroke", "currentColor");
+            svgIcon.setAttribute("stroke-width", "2");
+            svgIcon.setAttribute("stroke-linecap", "round");
+            svgIcon.setAttribute("stroke-linejoin", "round");
+
+            const path1 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            path1.setAttribute("d", "M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z");
+
+            const path2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            path2.setAttribute("d", "M14 2v5a1 1 0 0 0 1 1h5");
+
+            svgIcon.appendChild(path1);
+            svgIcon.appendChild(path2);
+
+            // Gabungkan elemen file-box
+            fileBox.appendChild(fileContent);
+            fileBox.appendChild(svgIcon);
+
+            // Append file-box ke message-meta
+            messageMeta.appendChild(fileBox);
+        }
+
+        // message-content dengan <p> tag
         const messageContent = document.createElement("div");
         messageContent.classList.add("message-content");
         const p = document.createElement("p");
         p.textContent = message.getContent();
         messageContent.appendChild(p);
 
-        // append message-meta
-        messageMeta.appendChild(messageTime);
+        // append message-content
         messageMeta.appendChild(messageContent);
 
         // append message-1
@@ -200,5 +251,15 @@ export default class ChatUI {
 
     setTotalUser(totalUserPacket){
         this.totalUser.textContent = String(totalUserPacket.getOnlineUsers()) + " Online";
+    }
+
+    onClickAttachButton(callback){
+        this.attachButton.addEventListener(
+            "change",
+            (event) => {
+                console.log(event.target.files[0]);
+                callback(event);
+            }
+        );
     }
 }

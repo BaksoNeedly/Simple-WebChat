@@ -1,0 +1,82 @@
+:root {
+    --gap: 8px;
+    --padding: 30px;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #010816;
+    color: white;
+}
+
+.navbar {
+    background-color: #000611;
+    border-bottom: 1px solid #1e1e20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap);
+    padding: var(--padding);
+}
+
+.navbar-brand {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    font-size: x-large;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: rgb(176, 173, 173);
+}
+
+.navbar-actions {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 12px;
+}
+
+.navbar-actions-login {
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: rgb(176, 173, 173);
+}
+
+.navbar-actions-login svg {
+    width: 16px;
+    height: 16px;
+}
+
+.button-4 {
+    border: 1px solid rgb(51, 50, 50);
+    border-radius: 10px;
+    padding: 12px 20px;
+}
+
+.button-5 {
+    background: rgb(63, 107, 230);;
+    border-radius: 10px;
+    padding: 12px 20px;
+}
+
+@media(max-width: 762px){
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

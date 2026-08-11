@@ -1,9 +1,10 @@
 import config
+import socket
 
 class HTTPParser:
 
     @staticmethod
-    def parse_request(request: bytes) -> dict:
+    def parse_request(request: bytes, client_socket: socket.socket) -> dict:
         header_end = request.find(b"\r\n\r\n")
         header = request[:header_end]
         header_text = header.decode(config.FORMAT)
@@ -16,6 +17,10 @@ class HTTPParser:
         for line in lines[1:]:
             key, value = line.split(":", 1)
             headers[key.strip().lower()] = value.strip()
+
+        content_length = headers.get("content-length")        
+        while content_length and len(body) < int(content_length):
+            body += client_socket.recv(config.BUFSIZE)
 
         return {
             "method": method,

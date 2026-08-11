@@ -73,6 +73,8 @@ class WebSocketRouter:
                     user.get_username()
                 )
 
+                print("WEBSOCKET ROUTER: MESSAGE PACKET")
+
                 for member in room.get_online_members():                    
                     if member.get_current_room_id() != room.get_id():
                         continue

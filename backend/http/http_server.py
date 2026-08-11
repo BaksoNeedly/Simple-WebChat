@@ -57,7 +57,7 @@ class HTTPServer:
         response = HTTPResponse(body="HELLO").build()
 
         if data:
-            request = HTTPRequest(data)
+            request = HTTPRequest(data, client_socket)
 
             cookie = request.get_headers().get("cookie")
             headers = request.get_headers()
@@ -68,7 +68,7 @@ class HTTPServer:
                 WebSocketServer.handle(client_socket, request)
                 return
 
-            self.write_log(data.decode(config.FORMAT))
+            # self.write_log(data.decode(config.FORMAT))
             router_result = self.get_router().route(request, client_socket)
 
             if router_result:
@@ -112,7 +112,7 @@ class HTTPServer:
         # print(len(RouteManager.get_all()), "ROUTES")
         # print("PATHS:", paths)
         # print("PATH:", request.get_path())
-        # print("REQUEST:", request.get_body())
+        # print("REQUEST BODY:", request.get_body())
         # print("RESPONSE BODY:", response.decode().split("\r\n\r\n",1)[1])
         # print(request.get_data(), "\r\n")
         # print(response.decode(config.FORMAT), "\r\n")

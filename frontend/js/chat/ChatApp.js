@@ -17,8 +17,6 @@ import Message from "./message/Message.js";
 
 export default class ChatApp {
 
-    #user = null;
-
     constructor(){
         this.socket = new WebSocketClient();
         this.sidebarUI = new SidebarUI();
@@ -27,14 +25,11 @@ export default class ChatApp {
 
         this.setupSocket();
         this.setupEvents();
-
-        this.#init();
     }
 
     async #init(){
         try{
-            this.#user = User.fromData(await UserService.fetchProfile());
-            const user = this.getUser();
+            const user = User.fromData(await UserService.fetchProfile());;
             const contacts = user.getContacts();
             Object.values(contacts).forEach(contact => {
                 this.sidebarUI.addUser(contact.getUsername());
@@ -58,6 +53,8 @@ export default class ChatApp {
 
             // Clear any existing ping interval to avoid memory leaks on reconnect
             if (this.pingInterval) clearInterval(this.pingInterval);
+
+            this.#init();
 
             this.pingInterval = setInterval(() => {
                 this.socket.sendData({
@@ -83,7 +80,7 @@ export default class ChatApp {
                     const totalUserPacket = TotalUserPacket.fromData(data);
                     this.chatUI.setTotalUser(totalUserPacket);
                     break;
-                case "update_status":
+                case "update_status": 
                     const packet = UpdateStatusPacket.fromData(data);
                     if(this.getUser()){
                         this.sidebarUI.updateContactStatus(this.getUser().getContact(packet.getUsername()));
@@ -159,5 +156,19 @@ export default class ChatApp {
                 this.socket.sendData(packet.toData());
             }
         );
+
+        this.chatUI.onClickAttachButton(
+            async (event) => {
+                const file = event.target.files[0];
+                    const formData = new FormData();
+                    const fileName = file.name;
+                    const fileBytes = file.size;
+                    formData.append("file", file);
+                    const response = await fetch("/upload", {
+                        method: "POST",
+                        body: formData
+                    });
+            }
+        )
     }
 }

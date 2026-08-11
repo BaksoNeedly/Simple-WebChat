@@ -45,7 +45,7 @@ class WebSocketServer:
                 return
 
             # DEBUG
-            print("Payload:", WebSocketFrame.parse(raw_frame))
+            # print("Payload:", WebSocketFrame.parse(raw_frame))
 
             opcode = raw_frame[0] & 0b00001111
             if opcode == 0b00001000: # Close frame

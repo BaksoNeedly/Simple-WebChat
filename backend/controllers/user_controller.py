@@ -18,6 +18,10 @@ from ..chat.room.room import Room
 
 from ..database.database_manager import DatabaseManager
 
+from ..http.multipart import Multipart
+
+from pathlib import Path
+
 class UserController:
 
     @staticmethod
@@ -35,8 +39,14 @@ class UserController:
             )
 
         user = UserManager.get(session_id)
+        if not user:
+            return HTTPResponse(
+                status="302",
+                headers={
+                    "Location": "/page/login"
+                },
+            )
         user_data = JSONParser.stringify(user.to_data())
-
         return HTTPResponse(
             headers={
                 "Content-Length": len(user_data.encode(config.FORMAT)),
@@ -136,3 +146,11 @@ class UserController:
             body=JSONParser.stringify(response_body)
         )
 
+    @staticmethod
+    def upload(request: HTTPRequest, client_socket: socket.socket) -> HTTPResponse:
+        multipart = Multipart.parse(request)
+        filename = multipart.get_disposition()[b"filename"].decode(config.FORMAT).strip('"')
+        path = Path(__file__).parent.parent.parent / "files" / filename
+        with open(path, "wb") as file:
+            file.write(multipart.get_body())
+        return HTTPResponse()

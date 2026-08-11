@@ -154026,4 +154026,3523 @@ Accept-Encoding: gzip, deflate
 Accept-Language: en-US,en;q=0.9
 Cookie: session_id=6--oVWig2L0mSx_Bjq49-j7OIJD4aHbBz3ddeWXT4QI
 
-{"type":"user","username":"Chelly"}
+{"type":"user","username":"Chelly"}GET / HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+GET /css/form.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/style.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/auth/login/Login.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/auth/login/LoginUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/auth/login/Login.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/LoginPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/auth/login/LoginUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /favicon.ico HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+POST /auth/login HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Content-Length: 51
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Content-Type: application/json
+Accept: */*
+Origin: http://192.168.100.100:8080
+Referer: http://192.168.100.100:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+{"type":"login","username":"Luiz","password":"123"}GET /page/chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.100.100:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/style.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/chat.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /img/user_icon.jpg HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/Chat.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatApp.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/Chat.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/core/WebSocketClient.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/SidebarUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/NewChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/UpdateStatusPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/TotalUserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/User.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/JoinMessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/UserService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/RoomManager.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessageHistoryPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/Room.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/message/Message.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/http/UserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/SidebarUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/NewChatPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/NewChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/Contact.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/user/User.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/utils/TimeUtils.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /user/profile HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /favicon.ico HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/style.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/chat.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /page/chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.100.100:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /page/login HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.100.100:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/form.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/style.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/auth/login/Login.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/auth/login/LoginUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/auth/login/Login.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/LoginPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/auth/login/LoginUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /favicon.ico HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+POST /auth/login HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Content-Length: 51
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://192.168.100.100:8080
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+{"type":"login","username":"Luiz","password":"123"}GET /page/chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/style.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/chat.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/Chat.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /img/user_icon.jpg HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatApp.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/Chat.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/core/WebSocketClient.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/SidebarUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/NewChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/JoinMessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/UpdateStatusPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/TotalUserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/User.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/UserService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/RoomManager.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/Room.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessageHistoryPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/message/Message.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/http/UserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/SidebarUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/NewChatPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/NewChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/utils/TimeUtils.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/Contact.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/user/User.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /user/profile HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /favicon.ico HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /page/chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/style.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/chat.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /img/user_icon.jpg HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/Chat.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatApp.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/Chat.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/core/WebSocketClient.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/SidebarUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/JoinMessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/UpdateStatusPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/TotalUserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/User.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+
+
+GET /js/chat/room/RoomManager.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/Room.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessageHistoryPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/http/UserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/SidebarUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/NewChatPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/NewChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/utils/TimeUtils.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/Contact.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/user/User.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /user/profile HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /favicon.ico HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /page/chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/chat.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/style.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /img/user_icon.jpg HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/Chat.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatApp.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/Chat.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/core/WebSocketClient.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/SidebarUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/JoinMessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/UpdateStatusPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/TotalUserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/User.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/UserService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/RoomManager.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/Room.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessageHistoryPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/message/Message.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/NewChatPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/NewChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/http/UserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/SidebarUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/utils/TimeUtils.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/Contact.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/user/User.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /user/profile HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /favicon.ico HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /page/chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/style.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/chat.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /img/user_icon.jpg HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/Chat.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatApp.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/Chat.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/SidebarUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/NewChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/core/WebSocketClient.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/JoinMessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/UpdateStatusPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/TotalUserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/User.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/UserService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/RoomManager.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/Room.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessageHistoryPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/message/Message.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/NewChatPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/NewChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/http/UserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/SidebarUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/utils/TimeUtils.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/Contact.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/user/User.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /user/profile HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /favicon.ico HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /page/chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/style.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/Chat.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+J_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatApp.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/Chat.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/core/WebSocketClient.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/NewChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/SidebarUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/JoinMessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/UpdateStatusPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/User.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/TotalUserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/UserService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/RoomManager.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/Room.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessageHistoryPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/message/Message.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/NewChatPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/NewChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/http/UserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/SidebarUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/utils/TimeUtils.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/Contact.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/user/User.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /user/profile HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /favicon.ico HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /page/chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/style.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/chat.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/Chat.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /img/user_icon.jpg HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatApp.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/Chat.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/core/WebSocketClient.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/SidebarUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/NewChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/JoinMessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/UpdateStatusPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/TotalUserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/User.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/UserService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/RoomManager.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/Room.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessageHistoryPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/message/Message.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/http/UserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/SidebarUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/NewChatPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/NewChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/utils/TimeUtils.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/Contact.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/user/User.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /user/profile HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /favicon.ico HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /page/chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/style.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/chat.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/Chat.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /img/user_icon.jpg HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatApp.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/Chat.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/core/WebSocketClient.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/SidebarUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/NewChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/JoinMessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/UpdateStatusPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/TotalUserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/User.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/RoomManager.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/UserService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/Room.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessageHistoryPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/message/Message.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/NewChatPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/NewChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/http/UserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/SidebarUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/utils/TimeUtils.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/Contact.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/user/User.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /user/profile HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /favicon.ico HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /page/chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/style.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/chat.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/Chat.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /img/user_icon.jpg HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatApp.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/Chat.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/core/WebSocketClient.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/SidebarUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/NewChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/JoinMessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/UpdateStatusPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/TotalUserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/UserService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/User.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/Room.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+E
+
+GET /js/packets/websocket/MessageHistoryPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/message/Message.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/http/UserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/SidebarUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/NewChatPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/NewChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/utils/TimeUtils.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/Contact.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/user/User.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /user/profile HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /favicon.ico HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /page/chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/style.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/chat.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /img/user_icon.jpg HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/Chat.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatApp.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/Chat.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/core/WebSocketClient.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/SidebarUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/NewChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/JoinMessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/UpdateStatusPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/TotalUserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/User.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/UserService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/Room.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/RoomManager.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessageHistoryPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/message/Message.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/http/UserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/SidebarUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/NewChatPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/NewChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/utils/TimeUtils.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/Contact.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/user/User.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /user/profile HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /favicon.ico HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /favicon.ico HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 OPR/133.0.0.0 (Edition std-2)
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: RTKcrH3NC5KYE2jf6E52xob5xj54q9CfNRSe0qdl3TM; session_id=8t29fyByvbwPr5KoQvFaSrIgLXBAafyD2Rh-OrraBD4
+
+GET /page/chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /page/login HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/form.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/auth/login/Login.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/style.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/auth/login/LoginUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/auth/login/Login.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/LoginPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/auth/login/LoginUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /favicon.ico HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+POST /auth/login HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Content-Length: 51
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://192.168.100.100:8080
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+{"type":"login","username":"Luiz","password":"123"}GET /page/chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.100.100:8080/page/login
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /css/chat.css HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+
+GET /js/chat/Chat.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /img/user_icon.jpg HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatApp.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/Chat.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/core/WebSocketClient.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/SidebarUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/NewChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatUI.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessagePacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/UpdateStatusPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/TotalUserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/User.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/ChatService.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+
+
+GET /js/chat/room/RoomManager.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/room/Room.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/websocket/MessageHistoryPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/message/Message.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatApp.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/utils/TimeUtils.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/ChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/NewChatPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/NewChatUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/packets/http/UserPacket.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/SidebarUI.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /js/chat/user/Contact.js HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Origin: http://192.168.100.100:8080
+Accept: */*
+Referer: http://192.168.100.100:8080/js/chat/user/User.js
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /user/profile HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: */*
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+GET /favicon.ico HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+POST /upload HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Content-Length: 123602
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary6ACdf2N9HSUA8E04
+Accept: */*
+Origin: http://192.168.100.100:8080
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+POST /chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Content-Length: 35
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://192.168.100.100:8080
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+{"type":"user","username":"Chelly"}POST /chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Content-Length: 33
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://192.168.100.100:8080
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+{"type":"user","username":"Test"}POST /chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Content-Length: 35
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://192.168.100.100:8080
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+{"type":"user","username":"Chelly"}POST /chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Content-Length: 33
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://192.168.100.100:8080
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+{"type":"user","username":"Luiz"}POST /chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Content-Length: 35
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://192.168.100.100:8080
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+{"type":"user","username":"Chelly"}POST /chat HTTP/1.1
+Host: 192.168.100.100:8080
+Connection: keep-alive
+Content-Length: 33
+User-Agent: Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Edg/151.0.0.0 Mobile Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://192.168.100.100:8080
+Referer: http://192.168.100.100:8080/page/chat
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=QIRc1LYF_Qtn10uFxMruN7KPJ_kNHw4w_CogIofzaxE
+
+{"type":"user","username":"Luiz"}

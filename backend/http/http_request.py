@@ -1,9 +1,10 @@
 from backend.http.http_parser import HTTPParser
+import socket
 
 class HTTPRequest:
 
-    def __init__(self, raw: bytes):
-        data = HTTPParser.parse_request(raw)
+    def __init__(self, raw: bytes, client_socket: socket.socket):
+        data = HTTPParser.parse_request(raw, client_socket)
         self._data = data
         self._method = data["method"]
         self._path = data["path"]

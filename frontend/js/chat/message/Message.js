@@ -3,14 +3,17 @@ export default class Message {
     #content;
     #timestamp;
     #sender;
+    #file;
 
     constructor(
         content,
         timestamp,
+        file = "",
         sender = ""
     ){
         this.#content = content;
         this.#timestamp = timestamp;
+        this.#file = file;
         this.#sender = sender;
     }
 
@@ -18,6 +21,7 @@ export default class Message {
         return new Message(
             data["content"],
             data["timestamp"],
+            data["file"],
             data["sender"]
         );
     }
@@ -26,6 +30,7 @@ export default class Message {
         return {
             content: this.#content,
             timestamp: this.#timestamp,
+            file: this.#file,
             sender: this.#sender,
             type: "message"
         }
@@ -39,7 +44,11 @@ export default class Message {
         return this.#timestamp;
     }
 
+    getFile(){
+        return this.#file;
+    }
+
     getSender(){
         return this.#sender;
-    }
+    }    
 }
