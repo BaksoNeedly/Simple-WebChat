@@ -1,7 +1,6 @@
 import WebSocketClient from "../core/WebSocketClient.js";
 import SidebarUI from "./SidebarUI.js";
 import NewChatUI from "./NewChatUI.js";
-import ChatUI from "./ChatUI.js";
 
 import MessagePacket from "../packets/websocket/MessagePacket.js";
 import JoinMessagePacket from "../packets/websocket/JoinMessagePacket.js";
@@ -14,6 +13,7 @@ import ChatService from "./ChatService.js";
 import RoomManager from "./room/RoomManager.js";
 import Room from "./room/Room.js";
 import Message from "./message/Message.js";
+import ChatUI from "./ui/chat/ChatUI.js";
 
 export default class ChatApp {
     #user = null;

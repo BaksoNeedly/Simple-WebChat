@@ -1,8 +1,8 @@
 import ChatHeaderUI from "./ChatHeaderUI.js";
 import ChatBodyUI from "./ChatBodyUI.js";
 import ChatFooterUI from "./ChatFooterUI.js";
-import Message from "../message/Message.js";
-import TimeUtils from "../utils/TimeUtils.js";
+import TimeUtils from "../../../utils/TimeUtils.js";
+import Message from "../../message/Message.js";
 
 export default class ChatUI {
     #headerUI;
