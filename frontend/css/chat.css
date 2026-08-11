@@ -135,12 +135,6 @@
 .chat-footer{
     margin-top: auto;
     padding: calc(var(--padding) - 20px);
-    display: flex;
-    align-items: center;
-}
-
-.chat-input-wrapper {
-    width: 100%;
 }
 
 .chat-input-container {
@@ -320,4 +314,54 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+.attached-file-container {
+    background-color: rgb(236, 231, 231);
+    border-radius: var(--uni-border-radius);
+    padding: 10px;
+    width: 20dvh;
+    height: 20dvh;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.file-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.file-icon-container .icon {
+    width: 50px;
+    height: 50px;
+}
+
+.file-meta-container {
+    margin-top: auto;
+}
+
+.cancel-container {
+    position: absolute;
+    transition: 0.1s ease;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s ease;
+    padding: 5px;
+}
+
+.cancel-container .icon {
+    width: 100%;
+    height: 100%;
+}
+.cancel-container:hover {
+    background-color: rgb(173, 171, 171);
 }

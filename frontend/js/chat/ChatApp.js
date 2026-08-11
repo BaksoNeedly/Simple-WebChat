@@ -1,23 +1,24 @@
 import WebSocketClient from "../core/WebSocketClient.js";
 import SidebarUI from "./SidebarUI.js";
 import NewChatUI from "./NewChatUI.js";
-
 import ChatUI from "./ChatUI.js";
+
 import MessagePacket from "../packets/websocket/MessagePacket.js";
 import JoinMessagePacket from "../packets/websocket/JoinMessagePacket.js";
 import UpdateStatusPacket from "../packets/websocket/UpdateStatusPacket.js";
 import TotalUserPacket from "../packets/websocket/TotalUserPacket.js";
+
 import User from "./user/User.js";
 import UserService from "./user/UserService.js";
 import ChatService from "./ChatService.js";
 import RoomManager from "./room/RoomManager.js";
 import Room from "./room/Room.js";
-import MessageHistoryPacket from "../packets/websocket/MessageHistoryPacket.js";
 import Message from "./message/Message.js";
 
 export default class ChatApp {
+    #user = null;
 
-    constructor(){
+    constructor() {
         this.socket = new WebSocketClient();
         this.sidebarUI = new SidebarUI();
         this.newChatUI = new NewChatUI();
@@ -27,148 +28,142 @@ export default class ChatApp {
         this.setupEvents();
     }
 
-    async #init(){
-        try{
-            const user = User.fromData(await UserService.fetchProfile());;
+    async #init() {
+        try {
+            this.#user = User.fromData(await UserService.fetchProfile());
+            const user = this.getUser();
             const contacts = user.getContacts();
-            Object.values(contacts).forEach(contact => {
+
+            Object.values(contacts).forEach((contact) => {
                 this.sidebarUI.addUser(contact.getUsername());
-                RoomManager.create(
-                    new Room(contact.getUsername())
-                );
+                RoomManager.create(new Room(contact.getUsername()));
             });
-            this.sidebarUI.setUsername(user.getUsername());            
-        }catch(error){
+
+            this.sidebarUI.setUsername(user.getUsername());
+        } catch (error) {
             console.error("Failed to initialize ChatApp:", error);
         }
     }
 
-    getUser(){
+    getUser() {
         return this.#user;
     }
 
-    setupSocket(){
+    setupSocket() {
         this.socket.onOpen = async () => {
-            this.socket.sendData(new UpdateStatusPacket().toData());            
+            this.socket.sendData(new UpdateStatusPacket().toData());
 
-            // Clear any existing ping interval to avoid memory leaks on reconnect
             if (this.pingInterval) clearInterval(this.pingInterval);
 
-            this.#init();
+            await this.#init();
 
             this.pingInterval = setInterval(() => {
-                this.socket.sendData({
-                    type: "ping"
-                });  
-                // console.log(RoomManager.getAll())
-            }, 1000 * 1);
-
-        }
+                this.socket.sendData({ type: "ping" });
+            }, 1000);
+        };
     }
 
-    setupEvents(){        
-
+    setupEvents() {
         this.socket.onMessage = (event) => {
-            // console.log(event.data)
-            const data = JSON.parse(event.data)
-            if(!data) return;
+            const data = JSON.parse(event.data);
+            if (!data || !data.type) return;
 
-            const type = data.type;
-            if(!type) return;
-            switch(type){
+            switch (data.type) {
                 case "total_user":
                     const totalUserPacket = TotalUserPacket.fromData(data);
-                    this.chatUI.setTotalUser(totalUserPacket);
+                    this.chatUI.getHeaderUI().setOnlineCount(totalUserPacket.getOnlineUsers());
                     break;
-                case "update_status": 
-                    const packet = UpdateStatusPacket.fromData(data);
-                    if(this.getUser()){
-                        this.sidebarUI.updateContactStatus(this.getUser().getContact(packet.getUsername()));
+
+                case "update_status":
+                    const statusPacket = UpdateStatusPacket.fromData(data);
+                    if (this.getUser()) {
+                        this.sidebarUI.updateContactStatus(this.getUser().getContact(statusPacket.getUsername()));
                     }
                     break;
+
                 case "message":
                     const message = Message.fromData(data);
-                    if(message.getSender() !== this.getUser().getUsername())
-                        this.chatUI.addReceivedMessage(Message.fromData(data));
+                    if (message.getSender() !== this.getUser().getUsername()) {
+                        this.chatUI.getBodyUI().addReceivedMessage(message);
+                    }
                     const room = this.getUser().getCurrentRoom();
-                    if(room){
+                    if (room) {
                         room.addMessage(message);
                     }
                     break;
 
                 case "join_message":
-                    this.chatUI.addJoinMessage(JoinMessagePacket.fromData(data));
+                    this.chatUI.getBodyUI().addJoinMessage(JoinMessagePacket.fromData(data));
                     break;
             }
-        }
+        };
 
-        this.socket.onClose = (event) => {
+        this.socket.onClose = () => {
             if (this.pingInterval) clearInterval(this.pingInterval);
-        }
+        };
 
-        this.sidebarUI.onClickNewChat(
-            () => {                
-                this.newChatUI.show();
-            }
-        );
-        this.newChatUI.onCancel(
-            () => {
-                this.newChatUI.hide();
-            }
-        );
+        // Event Modal New Chat
+        this.sidebarUI.onClickNewChat(() => {
+            this.newChatUI.show();
+        });
+
+        this.newChatUI.onCancel(() => {
+            this.newChatUI.hide();
+        });
+
         this.newChatUI.onStartNewChat(async (packet) => {
             const data = await ChatService.createNewChat(packet.toData());
-            
+
             if (data.message) {
                 this.newChatUI.setLabel(data.message, data.success ? "black" : "red");
             }
             if (data.success) {
                 this.newChatUI.hide();
                 const newContact = packet.getUsername();
-                
                 this.#user.addContact(newContact);
                 this.sidebarUI.addUser(newContact);
             }
         });
 
+        // Event Buka Chat Room
         this.sidebarUI.onClickRoom(async (packet) => {
             const chatData = await ChatService.openChatRoom(packet.toData());
-            
+
             if (chatData.success) {
-                this.chatUI.clearMessages();
-                this.chatUI.show();
-                this.chatUI.setTitle(packet.getUsername());
+                this.chatUI.getBodyUI().clearMessages();
+                this.chatUI.getBodyUI().show();
+                this.chatUI.getHeaderUI().setTitle(packet.getUsername());
+
                 this.socket.sendData(new JoinMessagePacket().toData());
+
                 const room = RoomManager.get(packet.getUsername());
                 this.getUser().setCurrentRoom(room);
-                Object.entries(room.getMessages()).forEach(([key, message]) => {
-                    if(message.getSender() === this.getUser().getUsername()){
-                        this.chatUI.addSentMessage(message);                        
-                    }else this.chatUI.addReceivedMessage(message);
-                })
+
+                Object.entries(room.getMessages()).forEach(([, message]) => {
+                    if (message.getSender() === this.getUser().getUsername()) {
+                        this.chatUI.getBodyUI().addSentMessage(message);
+                    } else {
+                        this.chatUI.getBodyUI().addReceivedMessage(message);
+                    }
+                });
             }
         });
 
-        this.chatUI.onSendMessage(
-            (packet) => {
-                this.chatUI.addSentMessage(packet);
-                this.chatUI.clearInput();
-                this.socket.sendData(packet.toData());
-            }
-        );
+        // Event Kirim Pesan
+        this.chatUI.onSendMessage(async (message) => {
+            this.chatUI.getBodyUI().addSentMessage(message);
+            this.socket.sendData(message.toData());
+        });
 
-        this.chatUI.onClickAttachButton(
-            async (event) => {
-                const file = event.target.files[0];
-                    const formData = new FormData();
-                    const fileName = file.name;
-                    const fileBytes = file.size;
-                    formData.append("file", file);
-                    const response = await fetch("/upload", {
-                        method: "POST",
-                        body: formData
-                    });
+        // Event Attachment File
+        this.chatUI.getFooterUI().onAttachFile((file) => {
+            if (file) {
+                this.chatUI.getFooterUI().attachFile(file);
             }
-        )
+        });
+
+        this.chatUI.getFooterUI().onAttachCancel(() => {
+            this.chatUI.getFooterUI().removeAttachedFile();
+        });
     }
 }

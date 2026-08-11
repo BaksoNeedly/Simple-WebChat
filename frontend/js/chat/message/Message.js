@@ -3,12 +3,12 @@ export default class Message {
     #content;
     #timestamp;
     #sender;
-    #file;
+    #file = null;
 
     constructor(
         content,
         timestamp,
-        file = "",
+        file = null,
         sender = ""
     ){
         this.#content = content;

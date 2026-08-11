@@ -2,22 +2,22 @@ import Contact from "./Contact.js";
 
 export default class User {
 
-    static #username;
-    static #contacts;
-    static #currentRoom = null;
+    #username;
+    #contacts;
+    #currentRoom = null;
 
     constructor(
         username = "",
         contacts = []
     ){
-        User.#username = username;
-        User.#contacts = contacts;
+        this.#username = username;
+        this.#contacts = contacts;
     }
 
-    static toData(){
+    toData(){
         return {
-            username: User.#username,
-            contacts: User.#contacts
+            username: this.#username,
+            contacts: this.#contacts
         }
     }
 
@@ -33,23 +33,23 @@ export default class User {
         )
     }
 
-    static getUsername(){
-        return User.#username;
+    getUsername(){
+        return this.#username;
     }
 
-    static getContacts(){
-        return User.#contacts;
+    getContacts(){
+        return this.#contacts;
     }
 
-    static getContact(username){
-        return User.#contacts[username];
+    getContact(username){
+        return this.#contacts[username];
     }
 
-    static getCurrentRoom(){
-        return User.#currentRoom;
+    getCurrentRoom(){
+        return this.#currentRoom;
     }
 
-    static setCurrentRoom(room){
-        User.#currentRoom = room;
+    setCurrentRoom(room){
+        this.#currentRoom = room;
     }
 }
