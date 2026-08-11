@@ -23,6 +23,12 @@
     overflow-x: auto;
 }
 
+@media(max-width: 732px){
+    .sidebar {
+        max-width: 100%;
+    }
+}
+
 .groups-section {
     display: flex;
     flex-direction: column;
