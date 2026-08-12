@@ -38,22 +38,22 @@ class WebSocketServer:
         user = User(client_socket, session)
         UserManager.set(user)
         print(user.get_username(), "connected.")
-    # try:
-        while True:
-            raw_frame = client_socket.recv(config.BUFSIZE)
-            if not raw_frame:
-                return
+        try:
+            while True:
+                raw_frame = client_socket.recv(config.BUFSIZE)
+                if not raw_frame:
+                    return
 
-            # DEBUG
-            # print("Payload:", WebSocketFrame.parse(raw_frame))
+                # DEBUG
+                # print("Payload:", WebSocketFrame.parse(raw_frame))
 
-            opcode = raw_frame[0] & 0b00001111
-            if opcode == 0b00001000: # Close frame
-                print("CLOSE FRAME DETECTED.")
-                break
+                opcode = raw_frame[0] & 0b00001111
+                if opcode == 0b00001000: # Close frame
+                    print("CLOSE FRAME DETECTED.")
+                    break
 
-            WebSocketRouter.route(raw_frame, user)
-    # except Exception as e:
-    #     print(f"Error occurred while handling WebSocket connection: {e}")
-    # finally:
-    #     UserManager.close(user)
+                WebSocketRouter.route(raw_frame, user)
+        except Exception as e:
+            print(f"Error occurred while handling WebSocket connection: {e}")
+        finally:
+            UserManager.close(user)

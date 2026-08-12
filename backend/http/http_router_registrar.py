@@ -52,7 +52,10 @@ class HttpRouterRegistrar:
         self._router.get("/js/chat/ui/chat/ChatBodyUI.js", lambda request, client_socket: AssetController.serve_response("ChatBodyUI.js", "frontend/js/chat/ui/chat"))
         self._router.get("/js/chat/ui/chat/ChatFooterUI.js", lambda request, client_socket: AssetController.serve_response("ChatFooterUI.js", "frontend/js/chat/ui/chat"))
         self._router.get("/js/chat/NewChatUI.js", lambda request, client_socket: AssetController.serve_response("NewChatUI.js", "frontend/js/chat/"))
-        self._router.get("/js/chat/SidebarUI.js", lambda request, client_socket: AssetController.serve_response("SidebarUI.js", "frontend/js/chat/"))
+        self._router.get("/js/chat/ui/sidebar/SidebarUI.js", lambda request, client_socket: AssetController.serve_response("SidebarUI.js", "frontend/js/chat/ui/sidebar"))
+        self._router.get("/js/chat/ui/sidebar/SidebarHeaderUI.js", lambda request, client_socket: AssetController.serve_response("SidebarHeaderUI.js", "frontend/js/chat/ui/sidebar"))
+        self._router.get("/js/chat/ui/sidebar/SidebarBodyUI.js", lambda request, client_socket: AssetController.serve_response("SidebarBodyUI.js", "frontend/js/chat/ui/sidebar"))
+        self._router.get("/js/chat/ui/sidebar/SidebarFooterUI.js", lambda request, client_socket: AssetController.serve_response("SidebarFooterUI.js", "frontend/js/chat/ui/sidebar"))
         self._router.get("/js/chat/ChatService.js", lambda request, client_socket: AssetController.serve_response("ChatService.js", "frontend/js/chat/"))
 
         self._router.get("/js/chat/models/Connect.js", lambda request, client_socket: AssetController.serve_response("Connect.js", "frontend/js/chat/models/"))

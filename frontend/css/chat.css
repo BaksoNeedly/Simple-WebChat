@@ -68,7 +68,7 @@
     border-radius: 100%;
 }
 
-.user-2-chat {
+.user-2-room {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -77,7 +77,7 @@
     border-radius: 10px;
 }
 
-.user-2-chat:hover {
+.user-2-room:hover {
     background-color: lightblue;
 }
 
@@ -129,6 +129,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.chat-header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .chat-header-right {

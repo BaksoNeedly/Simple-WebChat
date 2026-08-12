@@ -56,7 +56,7 @@
             <div class="users-section">
                 <p>Users</p>
                 <div class="users-list">
-                    <!-- <a class="user-2-chat">
+                    <!-- <a class="user-2-room">
                         <img src="../img/user_icon.jpg" class="user-profile-icon">
                         <div class="user-2-details">
                             <p class="user-2-name">Luiz</p>
@@ -75,7 +75,10 @@
         </div>        
         <div id="chat-area" class="chat-area hidden">
             <div class="chat-header">
-                <h2 class="chat-title">{{TITLE}}</h2>
+                <div class="chat-header-left">
+                    <svg class="icon pointer invert chat-exit" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+                    <h2 class="chat-title">{{TITLE}}</h2>
+                </div>
                 <div class="chat-header-right">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round-icon lucide-users-round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>
                     <p id="online-users" class="online-count">{{ONLINE_USERS}}</p>

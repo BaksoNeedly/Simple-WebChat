@@ -1,8 +1,6 @@
 import WebSocketClient from "../core/WebSocketClient.js";
-import SidebarUI from "./SidebarUI.js";
 import NewChatUI from "./NewChatUI.js";
 
-import MessagePacket from "../packets/websocket/MessagePacket.js";
 import JoinMessagePacket from "../packets/websocket/JoinMessagePacket.js";
 import UpdateStatusPacket from "../packets/websocket/UpdateStatusPacket.js";
 import TotalUserPacket from "../packets/websocket/TotalUserPacket.js";
@@ -14,6 +12,7 @@ import RoomManager from "./room/RoomManager.js";
 import Room from "./room/Room.js";
 import Message from "./message/Message.js";
 import ChatUI from "./ui/chat/ChatUI.js";
+import SidebarUI from "./ui/sidebar/SidebarUI.js";
 
 export default class ChatApp {
     #user = null;
@@ -35,11 +34,11 @@ export default class ChatApp {
             const contacts = user.getContacts();
 
             Object.values(contacts).forEach((contact) => {
-                this.sidebarUI.addUser(contact.getUsername());
+                this.sidebarUI.getBodyUI().addUser(contact.getUsername());
                 RoomManager.create(new Room(contact.getUsername()));
             });
 
-            this.sidebarUI.setUsername(user.getUsername());
+            this.sidebarUI.getFooterUI().setUsername(user.getUsername());
         } catch (error) {
             console.error("Failed to initialize ChatApp:", error);
         }
@@ -47,6 +46,10 @@ export default class ChatApp {
 
     getUser() {
         return this.#user;
+    }
+
+    isMobile(){
+        return window.matchMedia("(max-width: 732px)").matches;
     }
 
     setupSocket() {
@@ -77,7 +80,9 @@ export default class ChatApp {
                 case "update_status":
                     const statusPacket = UpdateStatusPacket.fromData(data);
                     if (this.getUser()) {
-                        this.sidebarUI.updateContactStatus(this.getUser().getContact(statusPacket.getUsername()));
+                        this.sidebarUI
+                            .getBodyUI()
+                            .updateContactStatus(this.getUser().getContact(statusPacket.getUsername()));
                     }
                     break;
 
@@ -102,8 +107,8 @@ export default class ChatApp {
             if (this.pingInterval) clearInterval(this.pingInterval);
         };
 
-        // Event Modal New Chat
-        this.sidebarUI.onClickNewChat(() => {
+        // Modal New Chat Events (Header & Body)
+        this.sidebarUI.getHeaderUI().onClickNewChat(() => {
             this.newChatUI.show();
         });
 
@@ -121,14 +126,13 @@ export default class ChatApp {
                 this.newChatUI.hide();
                 const newContact = packet.getUsername();
                 this.#user.addContact(newContact);
-                this.sidebarUI.addUser(newContact);
+                this.sidebarUI.getBodyUI().addUser(newContact);
             }
         });
 
-        // Event Buka Chat Room
-        this.sidebarUI.onClickRoom(async (packet) => {
+        // Chat Room Navigation Events (Body)
+        this.sidebarUI.getBodyUI().onClickRoom(async (packet) => {
             const chatData = await ChatService.openChatRoom(packet.toData());
-
             if (chatData.success) {
                 this.chatUI.getBodyUI().clearMessages();
                 this.chatUI.getBodyUI().show();
@@ -138,6 +142,11 @@ export default class ChatApp {
 
                 const room = RoomManager.get(packet.getUsername());
                 this.getUser().setCurrentRoom(room);
+
+                if(this.isMobile()){
+                    this.sidebarUI.hide();
+                    this.chatUI.show();
+                }
 
                 Object.entries(room.getMessages()).forEach(([, message]) => {
                     if (message.getSender() === this.getUser().getUsername()) {
@@ -149,13 +158,20 @@ export default class ChatApp {
             }
         });
 
-        // Event Kirim Pesan
+        this.chatUI.getHeaderUI().onExit(
+            () => {
+                this.chatUI.hide();
+                this.sidebarUI.show();
+            }
+        );
+
+        // Send Message Events
         this.chatUI.onSendMessage(async (message) => {
             this.chatUI.getBodyUI().addSentMessage(message);
             this.socket.sendData(message.toData());
         });
 
-        // Event Attachment File
+        // File Attachment Events
         this.chatUI.getFooterUI().onAttachFile((file) => {
             if (file) {
                 this.chatUI.getFooterUI().attachFile(file);
@@ -165,5 +181,6 @@ export default class ChatApp {
         this.chatUI.getFooterUI().onAttachCancel(() => {
             this.chatUI.getFooterUI().removeAttachedFile();
         });
+
     }
 }

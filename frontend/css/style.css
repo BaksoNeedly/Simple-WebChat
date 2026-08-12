@@ -136,3 +136,17 @@ a:hover {
 .hidden {
     display: none !important;
 }
+
+.icon {
+    transition: 0.1s ease;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.invert:hover {
+    border-radius: 100%;
+    background-color: gray;
+    filter: invert(100%);
+}

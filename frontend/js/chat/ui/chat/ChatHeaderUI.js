@@ -17,6 +17,15 @@ export default class ChatHeaderUI {
         }
     }
 
+    onExit(callback){
+        document.querySelector(".chat-exit").addEventListener(
+            "click",
+            () => {
+                callback();
+            }
+        );
+    }
+
     getOnlineCountElement() {
         return this.#onlineCountEl;
     }

@@ -15,6 +15,14 @@ export default class ChatUI {
         this.#footerUI = new ChatFooterUI();
     }
 
+    hide(){
+        document.querySelector(".chat-area").classList.add("hidden");
+    }
+
+    show(){
+        document.querySelector(".chat-area").classList.remove("hidden");
+    }
+
     getHeaderUI() {
         return this.#headerUI;
     }
