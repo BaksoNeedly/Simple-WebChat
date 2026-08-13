@@ -6,7 +6,7 @@ BUFSIZE = 4096
 
 FORMAT = "utf-8"
 
-DB_PASSWORD = "@G5l3k2k1."
+DB_PASSWORD = ""
 
 EMAIL = "luizpython807@gmail.com"
 PASSWORD = "ppow bvcf wyaj ovpu"
