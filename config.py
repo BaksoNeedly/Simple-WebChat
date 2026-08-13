@@ -8,9 +8,6 @@ FORMAT = "utf-8"
 
 DB_PASSWORD = ""
 
-EMAIL = "luizpython807@gmail.com"
-PASSWORD = "ppow bvcf wyaj ovpu"
-
 GUID = "258EAFA5-E914-47DA-95CA-C5AB0DC85B11"
 
 TABLE_CHAT_USERS = "chat_users"
