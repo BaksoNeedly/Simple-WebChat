@@ -1,16 +1,18 @@
+from ..database.database_manager import DatabaseManager
+import config
 import socket
 
 class Session:
 
     def __init__(self, id: str, username: str = None, email: str = None, user_socket: socket.socket = None):
-        self._id = id
+        self._session_id = id
         self._username = username
         self._email = email
         self._is_authenticated = False
         self._socket = user_socket
 
-    def get_id(self) -> str:
-        return self._id
+    def get_session_id(self) -> str:
+        return self._session_id
 
     def get_username(self) -> str:
         return self._username

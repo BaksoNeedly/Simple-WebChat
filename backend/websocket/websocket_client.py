@@ -14,4 +14,4 @@ class WebSocketClient:
         return self._client_session
 
     def get_id(self) -> str:
-        return self.get_session().get_id()
+        return self.get_session().get_session_id()

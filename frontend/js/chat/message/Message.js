@@ -1,3 +1,5 @@
+import FilePacket from "../../packets/websocket/FilePacket.js";
+
 export default class Message {
 
     #content;
@@ -21,16 +23,21 @@ export default class Message {
         return new Message(
             data["content"],
             data["timestamp"],
-            data["file"],
+            FilePacket.fromData(data["file"]),
             data["sender"]
         );
     }
 
     toData(){
+        const file = this.#file;
+        let filePacket = null;
+        if(file){
+            filePacket = new FilePacket(file.name);
+        }
         return {
             content: this.#content,
             timestamp: this.#timestamp,
-            file: this.#file,
+            file: file ? filePacket.toData() : null,
             sender: this.#sender,
             type: "message"
         }

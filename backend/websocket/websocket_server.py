@@ -34,7 +34,7 @@ class WebSocketServer:
             print("Session not found or not authenticated.")
             client_socket.close()
             return
-        session_id = session.get_id()
+        session_id = session.get_session_id()
         user = User(client_socket, session)
         UserManager.set(user)
         print(user.get_username(), "connected.")

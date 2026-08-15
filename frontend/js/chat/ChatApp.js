@@ -69,6 +69,7 @@ export default class ChatApp {
     setupEvents() {
         this.socket.onMessage = (event) => {
             const data = JSON.parse(event.data);
+
             if (!data || !data.type) return;
 
             switch (data.type) {
@@ -88,7 +89,11 @@ export default class ChatApp {
 
                 case "message":
                     const message = Message.fromData(data);
+                    console.log(message.getFile());
                     if (message.getSender() !== this.getUser().getUsername()) {
+                        if(message.getFile()){
+                            console.log(message.getFile());
+                        }
                         this.chatUI.getBodyUI().addReceivedMessage(message);
                     }
                     const room = this.getUser().getCurrentRoom();
@@ -127,6 +132,7 @@ export default class ChatApp {
                 const newContact = packet.getUsername();
                 this.#user.addContact(newContact);
                 this.sidebarUI.getBodyUI().addUser(newContact);
+                console.log("NEW");
             }
         });
 
@@ -167,8 +173,12 @@ export default class ChatApp {
 
         // Send Message Events
         this.chatUI.onSendMessage(async (message) => {
+            console.log(message.toData());
             this.chatUI.getBodyUI().addSentMessage(message);
             this.socket.sendData(message.toData());
+            if(message.getFile()){
+                ChatService.uploadFile(message.getFile());
+            }
         });
 
         // File Attachment Events
@@ -182,5 +192,10 @@ export default class ChatApp {
             this.chatUI.getFooterUI().removeAttachedFile();
         });
 
+        this.chatUI.onClickFileAttachment(
+            (packet) => {
+                ChatService.downloadFile(packet);
+            }
+        );
     }
 }

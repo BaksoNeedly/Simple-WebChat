@@ -12,7 +12,7 @@ import socket
 
 class AuthController:
     @staticmethod
-    def connect(request: HTTPRequest, client_socket) -> HTTPResponse:
+    def connect(request: HTTPRequest) -> HTTPResponse:
         cookie_header = request.get_headers().get("cookie")
         session_id = Cookie.parse(str(cookie_header).encode(config.FORMAT)).get("session_id")
         session = SessionManager.get(session_id)
@@ -30,7 +30,7 @@ class AuthController:
         )
 
     @staticmethod
-    def register(request: HTTPRequest, client_socket: socket.socket) -> HTTPResponse:
+    def register(request: HTTPRequest) -> HTTPResponse:
         register_request = RegisterRequest.from_data(request.get_body())
         username = register_request.get_username()
 
@@ -97,7 +97,7 @@ class AuthController:
         return response
 
     @staticmethod
-    def login(request: HTTPRequest, client_socket: socket.socket) -> HTTPResponse:
+    def login(request: HTTPRequest) -> HTTPResponse:
         login_request = LoginRequest.from_data(request.get_body())
         username = login_request.get_username()
 

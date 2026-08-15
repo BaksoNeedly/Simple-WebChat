@@ -29,7 +29,7 @@ class PageController:
         )
 
     @staticmethod
-    def chat_page(request=None, client_socket=None) -> HTTPResponse:
+    def chat_page(request=None) -> HTTPResponse:
         return PageController.serve_response(
             "chat.html",
             "frontend/html",
@@ -37,7 +37,7 @@ class PageController:
         )
 
     @staticmethod
-    def login_page(request=None, client_socket=None) -> HTTPResponse:
+    def login_page(request=None) -> HTTPResponse:
         return PageController.serve_response(
             "login.html",
             "frontend/html",
@@ -45,7 +45,7 @@ class PageController:
         )
 
     @staticmethod
-    def register_page(request=None, client_socket=None) -> HTTPResponse:
+    def register_page(request=None) -> HTTPResponse:
         return PageController.serve_response(
             "register.html",
             "frontend/html",

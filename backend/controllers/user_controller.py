@@ -25,7 +25,7 @@ from pathlib import Path
 class UserController:
 
     @staticmethod
-    def load_chat(request: HTTPRequest, client_socket) -> HTTPResponse:
+    def load_chat(request: HTTPRequest) -> HTTPResponse:
         cookie_header = request.get_headers().get("cookie")
         session_id = Cookie.parse(str(cookie_header).encode(config.FORMAT)).get("session_id")
         session = SessionManager.get(session_id)
@@ -57,7 +57,7 @@ class UserController:
 
 
     @staticmethod
-    def is_user_valid(request: HTTPRequest, client_socket) -> HTTPResponse:
+    def is_user_valid(request: HTTPRequest) -> HTTPResponse:
         cookie_header = request.get_headers().get("cookie")
         session_id = Cookie.parse(str(cookie_header).encode(config.FORMAT)).get("session_id")
         session = SessionManager.get(session_id)
@@ -75,9 +75,9 @@ class UserController:
 
 
     @staticmethod
-    def new_chat(request: HTTPRequest, client_socket: socket.socket) -> HTTPResponse:
+    def new_chat(request: HTTPRequest) -> HTTPResponse:
         session = SessionManager.extract_session(request)
-        session_id = session.get_id()
+        session_id = session.get_session_id()
         user = UserManager.get(session_id)
         packet = NewChatPacket.from_data(JSONParser.parse(request.get_body()))
         target_username = packet.get_username()
@@ -104,9 +104,9 @@ class UserController:
         )
 
     @staticmethod
-    def chat(request: HTTPRequest, client_socket: socket.socket) -> HTTPResponse:
+    def chat(request: HTTPRequest) -> HTTPResponse:
         session = SessionManager.extract_session(request)
-        session_id = session.get_id()
+        session_id = session.get_session_id()
         user = UserManager.get(session_id)
         packet = UserPacket.from_data(JSONParser.parse(request.get_body()))
         target_username = packet.get_username()
@@ -147,7 +147,7 @@ class UserController:
         )
 
     @staticmethod
-    def upload(request: HTTPRequest, client_socket: socket.socket) -> HTTPResponse:
+    def upload(request: HTTPRequest) -> HTTPResponse:
         multipart = Multipart.parse(request)
         filename = multipart.get_disposition()[b"filename"].decode(config.FORMAT).strip('"')
         path = Path(__file__).parent.parent.parent / "files" / filename

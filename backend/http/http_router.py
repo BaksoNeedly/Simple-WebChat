@@ -12,7 +12,7 @@ class HTTPRouter:
     def post(self, path: str, handler: callable):
         self._routers[("POST", path)] = handler
 
-    def route(self, request: HTTPRequest, client_socket) -> HTTPResponse | None:
+    def route(self, request: HTTPRequest) -> HTTPResponse | None:
         method = request.get_method()
         path = request.get_path()
 
@@ -20,4 +20,4 @@ class HTTPRouter:
         if not handler:
             return None
 
-        return handler(request, client_socket)
+        return handler(request)

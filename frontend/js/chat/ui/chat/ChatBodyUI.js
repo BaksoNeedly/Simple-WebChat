@@ -15,6 +15,14 @@ export default class ChatBodyUI {
         if (this.#chatAreaEl) this.#chatAreaEl.classList.add("hidden");
     }
 
+    getMessageAreaEl(){
+        return this.#messageAreaEl;
+    }
+
+    getFileBoxEls(){
+        return document.querySelectorAll(".file-box");
+    }
+
     clearMessages() {
         if (this.#messageAreaEl) {
             this.#messageAreaEl.innerHTML = "";
@@ -50,9 +58,12 @@ export default class ChatBodyUI {
             fileContentEl.classList.add("file-content");
 
             const fileNameEl = document.createElement("p");
+            fileNameEl.classList.add("file-name");
+            fileNameEl.dataset.fileName = message.getFile().name;
             fileNameEl.textContent = message.getFile().name;
 
             const fileSizeEl = document.createElement("p");
+            fileSizeEl.classList.add("file-size");  
             fileSizeEl.textContent = `${message.getFile().size} B`;
 
             fileContentEl.appendChild(fileNameEl);
@@ -125,6 +136,45 @@ export default class ChatBodyUI {
 
         messageHeaderEl.appendChild(usernameEl);
         messageHeaderEl.appendChild(timeEl);
+
+        if (message.getFile()) {
+            const fileBoxEl = document.createElement("div");
+            fileBoxEl.classList.add("file-box");
+
+            const fileContentEl = document.createElement("div");
+            fileContentEl.classList.add("file-content");
+
+            const fileNameEl = document.createElement("p");
+            fileNameEl.textContent = message.getFile().name;
+
+            const fileSizeEl = document.createElement("p");
+            fileSizeEl.textContent = `${message.getFile().size} B`;
+
+            fileContentEl.appendChild(fileNameEl);
+            fileContentEl.appendChild(fileSizeEl);
+
+            const svgIconEl = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            svgIconEl.setAttribute("class", "file-icon lucide lucide-file-icon lucide-file");
+            svgIconEl.setAttribute("width", "24");
+            svgIconEl.setAttribute("height", "24");
+            svgIconEl.setAttribute("viewBox", "0 0 24 24");
+            svgIconEl.setAttribute("fill", "none");
+            svgIconEl.setAttribute("stroke", "currentColor");
+            svgIconEl.setAttribute("stroke-width", "2");
+
+            const path1 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            path1.setAttribute("d", "M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z");
+
+            const path2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            path2.setAttribute("d", "M14 2v5a1 1 0 0 0 1 1h5");
+
+            svgIconEl.appendChild(path1);
+            svgIconEl.appendChild(path2);
+
+            fileBoxEl.appendChild(fileContentEl);
+            fileBoxEl.appendChild(svgIconEl);
+            messageMetaEl.appendChild(fileBoxEl);
+        }
 
         const messageContentEl = document.createElement("div");
         messageContentEl.classList.add("message-content");

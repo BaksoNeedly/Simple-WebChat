@@ -1,4 +1,5 @@
 from backend.http.http_parser import HTTPParser
+import config
 import socket
 
 class HTTPRequest:

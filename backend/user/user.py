@@ -13,6 +13,7 @@ class User:
         self._serial_id = None        
         self._current_room: str = None
         self.initialize()
+        # self._primary_key = DatabaseManager.fetch_one(f"SELECT id FROM {config.TABLE_CHAT_USERS} WHERE username=%s", (self.get_username(),))[0]
 
     def initialize(self) -> None:
         db = DatabaseManager.get_connection()
@@ -45,8 +46,8 @@ class User:
     def get_username(self) -> str:
         return self.get_session().get_username()
 
-    def get_id(self) -> str:
-        return self.get_session().get_id()
+    def get_session_id(self) -> str:
+        return self.get_session().get_session_id()
 
     def get_contacts(self) -> list:
         return self._contacts

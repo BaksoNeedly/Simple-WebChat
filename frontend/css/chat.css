@@ -306,15 +306,17 @@
     display: flex;
     gap: 4px;
     justify-content: end;
-    border: 1px solid lightgray;
+    border: 1px solid rgb(58, 58, 58);
     border-radius: 15px;
     padding: 5px;
-    transition: 0.2s ease;
+    transition: 0.1s ease;
     cursor: pointer;
 }
 
 .file-box:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
+    background-color: rgb(58, 58, 58);
+    filter: invert(100%);
 }
 
 .file-icon {

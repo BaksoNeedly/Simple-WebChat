@@ -2,7 +2,7 @@ IP = "0.0.0.0"
 PORT = 8080
 ADDRESS = (IP, PORT)
 
-BUFSIZE = 4096
+BUFSIZE =  100 * 1024 * 1024
 
 FORMAT = "utf-8"
 

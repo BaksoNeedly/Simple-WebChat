@@ -56,6 +56,7 @@ class WebSocketRouter:
                 # 2. Use safe .get() calls to prevent KeyError crashes
                 content = payload.get("content")
                 timestamp = payload.get("timestamp")
+                file = payload.get("file")
 
                 if content is None or timestamp is None:
                     return
@@ -70,10 +71,9 @@ class WebSocketRouter:
                 packet = MessagePacket(
                     content,
                     timestamp,
-                    user.get_username()
+                    user.get_username(),
+                    file
                 )
-
-                print("WEBSOCKET ROUTER: MESSAGE PACKET")
 
                 for member in room.get_online_members():                    
                     if member.get_current_room_id() != room.get_id():

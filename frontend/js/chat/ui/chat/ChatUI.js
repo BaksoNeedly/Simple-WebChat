@@ -3,6 +3,7 @@ import ChatBodyUI from "./ChatBodyUI.js";
 import ChatFooterUI from "./ChatFooterUI.js";
 import TimeUtils from "../../../utils/TimeUtils.js";
 import Message from "../../message/Message.js";
+import FilePacket from "../../../packets/websocket/FilePacket.js";
 
 export default class ChatUI {
     #headerUI;
@@ -33,6 +34,17 @@ export default class ChatUI {
 
     getFooterUI() {
         return this.#footerUI;
+    }
+
+    onClickFileAttachment(callback){
+        const messageAreaEl = this.getBodyUI().getMessageAreaEl();
+        messageAreaEl.addEventListener(
+            "click",
+            (event) => {
+                const fileBox = event.target.closest(".file-box");
+                callback(new FilePacket(fileBox.querySelector(".file-name").dataset.fileName));
+            }
+        );
     }
 
     onSendMessage(callback) {

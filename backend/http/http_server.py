@@ -69,7 +69,7 @@ class HTTPServer:
                 return
 
             # self.write_log(data.decode(config.FORMAT))
-            router_result = self.get_router().route(request, client_socket)
+            router_result = self.get_router().route(request)
 
             if router_result:
                 if not cookie:

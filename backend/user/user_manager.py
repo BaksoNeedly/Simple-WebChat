@@ -22,15 +22,15 @@ class UserManager:
 
     @classmethod
     def set(cls, client: User) -> None:
-        cls._clients[client.get_id()] = client
+        cls._clients[client.get_session_id()] = client
 
     @classmethod
     def remove(cls, client: User) -> User | None:
-        return cls._clients.pop(client.get_id(), None)
+        return cls._clients.pop(client.get_session_id(), None)
 
     @classmethod
     def contains(cls, client: User) -> bool:
-        return client.get_id() in cls._clients
+        return client.get_session_id() in cls._clients
 
     @classmethod
     def clear(cls) -> None:
