@@ -13,7 +13,12 @@ from backend.http.http_response import HTTPResponse
 from backend.managers.asset_manager import AssetManager
 from .http_router_registrar import HttpRouterRegistrar
 from ..utils.path_parser import PathParser
-from ..chat.room.room_manager import RoomManager
+from ..repositories.room_repository import RoomRepository
+from ..session.client_session_manager import ClientSessionManager as UserManager
+from ..repositories.message_repository import MessageRepository
+
+import asyncio
+import time
 
 class HTTPServer:
 
@@ -115,9 +120,7 @@ class HTTPServer:
         # print("REQUEST BODY:", request.get_body())
         # print("RESPONSE BODY:", response.decode().split("\r\n\r\n",1)[1])
         # print(request.get_data(), "\r\n")
-        # print(response.decode(config.FORMAT), "\r\n")
-        # for id, s in SessionManager.get_all().items():
-        #     print(s.get_id(), f": {s.get_username()} {s.get_email()} {s.is_authenticated()}")
+        # print(response.decode(config.FORMAT), "\r\n")        
 
         client_socket.sendall(response)
         client_socket.close()
@@ -125,6 +128,25 @@ class HTTPServer:
     def on_enable(self) -> None:
         self.info("Listening on " + f"{config.ADDRESS}...")
         threading.Thread(target=self.on_command).start()
+
+        threading.Thread(target=self.time_run).start()
+
+    def time_run(self):
+        while True:
+            time.sleep(1)
+
+            # self.info(f"MESSAGES: {MessageRepository.get_messages()}")
+            MessageRepository.get_messages()
+
+            # self.info("TOTAL SESSION: " + str(len(SessionManager.get_all())))
+            # for id, s in SessionManager.get_all().items():
+            #     self.info("SESSION:" + s.get_session_id() + f": {s.get_username()} {s.get_email()} {s.is_authenticated()}")
+
+            # self.info("\n")
+
+            # self.info("TOTAL USER: " + str(len(UserManager.get_all())))
+            # for id, s in UserManager.get_all().items():
+            #     self.info("USER:" + s.get_session_id() + f": {s.get_username()}")
 
     def on_disable(self) -> None:
         self.info("Server closed...")
@@ -145,9 +167,9 @@ class HTTPServer:
         except (Exception, KeyboardInterrupt, EOFError) as e:
             self.info(e)
         finally:
-            # print("HTTPSERVER:", "ROOMS:", len(RoomManager.get_rooms()))
-            # for room_id, room in RoomManager.get_rooms().items():
+            # print("HTTPSERVER:", "ROOMS:", len(RoomRepository.get_rooms()))
+            # for room_id, room in RoomRepository.get_rooms().items():
             #     print("HTTPSERVER:", f"ROOM: {room.get_id()}, MEMBERS: {room.get_members()}")
-            RoomManager.save()
+            RoomRepository.save_all()
             self.on_disable()
             self.close()

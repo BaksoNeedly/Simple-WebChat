@@ -1,6 +1,6 @@
 from pathlib import Path
 from ..http.multipart import Multipart
-from ..user.user import User
+from ..session.client_session import ClientSession
 import config
 
 class StorageService:
@@ -20,8 +20,8 @@ class StorageService:
             file.write(multipart.get_body())
 
     @classmethod
-    def save_user_file(cls, user: User, multipart: Multipart):
-        path = cls.STORAGE_PATH / str(user.get_serial_id())
+    def save_user_file(cls, client_session: ClientSession, multipart: Multipart):
+        path = cls.STORAGE_PATH / str(client_session.get_serial_id())
         return cls.save(
             multipart,
             path

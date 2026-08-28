@@ -1,0 +1,11 @@
+.verified-card { gap: 24px; }
+.verified-header { gap: 12px; }
+.verified-icon { display: grid; width: 72px; height: 72px; place-items: center; margin-bottom: 4px; border-radius: 50%; background: #ecfdf3; color: #039855; box-shadow: 0 0 0 8px #f3fdf7; }
+.verified-icon svg { width: 38px; height: 38px; }
+.verified-copy { max-width: 330px; line-height: 1.6; text-align: center; }
+.verified-body { display: flex; flex-direction: column; gap: 20px; }
+.verified-note { display: flex; align-items: center; gap: 10px; padding: 13px 14px; border: 1px solid #d1fadf; border-radius: 12px; background: #f6fef9; }
+.verified-note p { color: #027a48; font-size: 12px; }
+.verified-dot { width: 8px; height: 8px; flex: 0 0 auto; border-radius: 50%; background: #12b76a; }
+.verified-footer { display: flex; }
+.verified-footer a { text-align: center; }

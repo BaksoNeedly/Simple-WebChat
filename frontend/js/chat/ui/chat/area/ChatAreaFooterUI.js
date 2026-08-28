@@ -1,7 +1,7 @@
-export default class ChatFooterUI {
+export default class ChatAreaFooterUI {
     #attachedFile = null;
     #onAttachCallback = null;
-    
+
     #attachInputEl;
     #chatInputEl;
     #sendButtonEl;
@@ -9,9 +9,10 @@ export default class ChatFooterUI {
 
     constructor() {
         this.#attachInputEl = document.getElementById("attach-input");
-        this.#chatInputEl = document.querySelector(".chat-input");
-        this.#sendButtonEl = document.getElementById("send-button");
+        this.#chatInputEl = document.querySelector(".msg-input");
+        this.#sendButtonEl = document.querySelector(".send-btn");
         this.#attachedContainerEl = document.querySelector(".attached-file-container");
+        this.footerEl = document.querySelector(".chat-area-footer");
 
         this.initAttachButton();
     }
@@ -29,9 +30,7 @@ export default class ChatFooterUI {
     }
 
     clearInput() {
-        if (this.#chatInputEl) {
-            this.#chatInputEl.value = "";
-        }
+        if (this.#chatInputEl) this.#chatInputEl.value = "";
     }
 
     attachFile(file) {
@@ -43,9 +42,7 @@ export default class ChatFooterUI {
     }
 
     removeAttachedFile() {
-        if (this.#attachedContainerEl) {
-            this.#attachedContainerEl.classList.add("hidden");
-        }
+        if (this.#attachedContainerEl) this.#attachedContainerEl.classList.add("hidden");
         this.#attachedFile = null;
         if (this.#attachInputEl) this.#attachInputEl.value = "";
     }
@@ -53,18 +50,12 @@ export default class ChatFooterUI {
     initAttachButton() {
         if (!this.#attachInputEl) return;
 
+        document.querySelector(".attach-btn")?.addEventListener("click", () => this.#attachInputEl.click());
         this.#attachInputEl.addEventListener("change", (event) => {
             const file = event.target.files[0];
-            if (file) {
-                this.#attachedFile = file;
-                this.attachFile(file);
-            } else {
-                this.#attachedFile = null;
-            }
-
-            if (this.#onAttachCallback) {
-                this.#onAttachCallback(this.#attachedFile);
-            }
+            this.#attachedFile = file || null;
+            if (file) this.attachFile(file);
+            if (this.#onAttachCallback) this.#onAttachCallback(this.#attachedFile);
         });
     }
 
@@ -74,7 +65,6 @@ export default class ChatFooterUI {
 
     onAttachCancel(callback) {
         if (!this.#attachedContainerEl) return;
-
         const cancelContainerEl = this.#attachedContainerEl.querySelector(".cancel-container");
         if (cancelContainerEl) {
             cancelContainerEl.addEventListener("click", () => {
@@ -82,5 +72,9 @@ export default class ChatFooterUI {
                 callback();
             });
         }
+    }
+
+    getElement() {
+        return this.footerEl;
     }
 }

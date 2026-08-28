@@ -6,9 +6,13 @@ BUFSIZE =  100 * 1024 * 1024
 
 FORMAT = "utf-8"
 
-DB_PASSWORD = ""
+DB_PASSWORD = "@G5l3k2k1."
 
 GUID = "258EAFA5-E914-47DA-95CA-C5AB0DC85B11"
 
 TABLE_CHAT_USERS = "chat_users"
 TABLE_CHAT_ROOMS = "chat_rooms"
+TABLE_CHAT_ROOM_MEMBERS = "chat_room_members"
+TABEL_CHAT_MESSAGES = "chat_messages"
+TABLE_CHAT_MESSAGE_READS = "chat_message_reads"
+TABLE_CHAT_USER_CONTACTS = "chat_user_contacts"

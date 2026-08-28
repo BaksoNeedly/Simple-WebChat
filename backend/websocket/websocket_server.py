@@ -21,8 +21,8 @@ from .websocket_handshake import WebSocketHandshake
 from .websocket_broadcaster import WebSocketBroadcaster
 from .websocket_router import WebSocketRouter
 
-from ..user.user import User
-from ..user.user_manager import UserManager
+from ..session.client_session import ClientSession
+from ..session.client_session_manager import ClientSessionManager
 
 class WebSocketServer:    
 
@@ -35,25 +35,29 @@ class WebSocketServer:
             client_socket.close()
             return
         session_id = session.get_session_id()
-        user = User(client_socket, session)
-        UserManager.set(user)
-        print(user.get_username(), "connected.")
-        try:
-            while True:
-                raw_frame = client_socket.recv(config.BUFSIZE)
-                if not raw_frame:
-                    return
+        client_session = ClientSession(client_socket, session)
+        ClientSessionManager.set(client_session)
+        if not client_session:
+            client_socket.sendall(HTTPResponse(status="404", reason_phrase="Not Found"))
+            client_socket.close()
+            return
+        print(client_session.get_username(), "connected.")
+        # try:
+        while True:
+            raw_frame = client_socket.recv(config.BUFSIZE)
+            if not raw_frame:
+                return
 
-                # DEBUG
-                # print("Payload:", WebSocketFrame.parse(raw_frame))
+            # DEBUG
+            # print("Payload:", WebSocketFrame.parse(raw_frame))
 
-                opcode = raw_frame[0] & 0b00001111
-                if opcode == 0b00001000: # Close frame
-                    print("CLOSE FRAME DETECTED.")
-                    break
+            opcode = raw_frame[0] & 0b00001111
+            if opcode == 0b00001000: # Close frame
+                print("CLOSE FRAME DETECTED.")
+                break
 
-                WebSocketRouter.route(raw_frame, user)
-        except Exception as e:
-            print(f"Error occurred while handling WebSocket connection: {e}")
-        finally:
-            UserManager.close(user)
+            WebSocketRouter.route(raw_frame, client_session)
+        # except Exception as e:
+        #     print(f"Error occurred while handling WebSocket connection: {e}")
+        # finally:
+        #     UserManager.close(user)

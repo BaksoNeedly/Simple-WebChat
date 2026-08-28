@@ -44,9 +44,13 @@ class DatabaseManager:
         if not conn:
             raise RuntimeError("[DATABASE] Execution failed: No active database connection.")
 
-        with conn.cursor() as cur:
-            cur.execute(query, params)
-        conn.commit()
+        try:
+            with conn.cursor() as cur:
+                cur.execute(query, params)
+            conn.commit()
+        except Exception:
+            conn.rollback()
+            raise
 
     @classmethod
     def fetch_one(cls, query: str, params: tuple | list | dict = (), as_dict: bool = False) -> dict | tuple | None:

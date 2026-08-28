@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/chat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- <div id="new-chat-container" class="new-chat-container"> -->
+    <div id="new-chat-container" class="new-chat-container hidden">
+        <div class="new-chat-package">
+            <div class="new-chat-header">
+                <h2>New Chat</h2>
+                <div class="circle-icon">
+                    <svg class="new-chat-cancel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#706b6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </div>
+            </div>
+            <p class="new-chat-label"></p>
+            <div class="divider">
+                <hr>
+            </div>
+            <div class="new-chat-body">
+                <h4>Start a chat with</h4>
+                <input class="input-1 new-chat-input" placeholder="Enter usename or group name ...">
+            </div>            
+            <div class="divider">
+                <hr>
+            </div>
+            <div class="new-chat-footer">
+                <button class="button-2 new-chat-cancel">Cancel</button>
+                <button class="button-1 start-new-chat">Start Chat</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">
+                <h2>Chat</h2>
+            </div>
+            <button id="new-chat" class="button-1">+ New Chat</button>
+            <div class="groups-section">
+                <p>Groups</p>
+                <div class="groups-list">
+                    <a id="group-chat" class="group-chat">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle-icon lucide-message-circle"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></svg>
+                        <p id="group-name">General Chat</p>
+                    </a>
+                </div>
+            </div>
+            <div class="users-section">
+                <p>Users</p>
+                <div class="users-list">
+                    <a class="user-2-room">
+                        <img src="../img/user_icon.jpg" class="user-profile-icon">
+                        <div class="user-2-details">
+                            <p class="user-2-name">Luiz</p>
+                            <p class="user-2-status">Online</p>
+                        </div>
+                        <p>1 New Message</p>
+                    </a>
+                </div>
+            </div>
+            <div class="user-profile">
+                <div class="user-info">
+                        <img src="../img/user_icon.jpg" class="user-profile-icon">
+                        <p class="username">{{USERNAME}}</p>
+                </div>                
+                <svg class="profile-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+            </div>
+        </div>        
+        <div id="chat-area" class="chat-area hidden">
+        <!-- <div id="chat-area" class="chat-area "> -->
+            <div class="chat-header">
+                <div class="chat-header-left">
+                    <svg class="icon pointer invert chat-exit" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+                    <h2 class="chat-title">{{TITLE}}</h2>
+                </div>
+                <div class="chat-header-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round-icon lucide-users-round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>
+                    <p id="online-users" class="online-count">{{ONLINE_USERS}}</p>
+                </div>
+            </div>
+            <div id="message-area" class="message-area">
+                <div class="message-1">
+                    <div class="message-meta">
+                        
+                        <div class="message-time">
+                            9.07 AM
+                        </div>
+                        <div class="file-box">
+                            <div class=file-content>
+                                <p>test.json</p>
+                                <p>3 MB</p>
+                            </div>                            
+                            <svg class="file-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-icon lucide-file"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/></svg>
+                        </div>
+                        <div class="message-content">                                                       
+                            <p>Hai nama aku luiz.</p>
+                        </div>                            
+                    </div>
+                </div>
+                <div class="message-2">
+                    <img src="../img/user_icon.jpg" class="user-profile-icon">
+                    <div class="message-meta">
+                        <div class="message-header">
+                            <div class="message-username">
+                                Luiz Febrian
+                            </div>
+                            <div class="message-time">
+                                9.07 AM
+                            </div>
+                        </div>
+                        <div class="file-box">
+                            <div class=file-content>
+                                <p>test.json</p>
+                                <p>3 MB</p>
+                            </div>                            
+                            <svg class="file-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-icon lucide-file"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/></svg>
+                        </div>
+                        <div class="message-content">
+                            <p>Hello Everyone.</p>
+                        </div> 
+                    </div>                                               
+                </div>
+                <div class="join-message">
+                    <hr>
+                    <p>User joined</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <div class="chat-input-wrapper">
+                    <div class="attached-file-container hidden">
+                        <div class="cancel-container">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                        </div> 
+                        <div class="file-icon-container">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-code-corner-icon lucide-file-code-corner"><path d="M4 12.15V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2h-3.35"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="m5 16-3 3 3 3"/><path d="m9 22 3-3-3-3"/></svg>
+                        </div>
+                        <div class="file-meta-container">
+                            <p class="file-name">test.json</p>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-container">
+                        <div class="attach-container">
+                            <input type="file" class="attach-input" id="attach-input" style="display: none;">
+                            <label for="attach-input" class="attach-btn">
+                                <svg class="icon attach" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"/>
+                                </svg>
+                            </label>
+                        </div>
+                        <textarea class="textarea-1 chat-input" placeholder="Type a message..."></textarea>
+                        <button id="send-button" class="button-3 chat-send-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send">
+                                <path d="m22 2-7 20-4-9-9-4Z"/>
+                                <path d="M22 2 11 13"/>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                </div>                                                
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../js/chat/Chat.js"></script>
+</body>
+</html>

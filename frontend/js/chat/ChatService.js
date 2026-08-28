@@ -1,4 +1,25 @@
+import ApiResponse from "../core/ApiResponse.js";
+
 export default class ChatService {
+
+    static async searchUser(data) {
+        const response = await fetch("/chat/search", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+        return new ApiResponse(response);
+    }
+
+    static async newChat(data) {
+        const response = await fetch("/chat/new", {
+            method: "POST",
+            body: JSON.stringify(data)
+        });
+        return new ApiResponse(response)
+    }
     
     static async createNewChat(packet) {
         const response = await fetch("/chat/new", {
@@ -11,15 +32,16 @@ export default class ChatService {
         return await response.json();
     }
 
-    static async openChatRoom(packet) {
+    static async chat(packetData) {
         const response = await fetch("/chat", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(packet)
+            body: JSON.stringify(packetData)
         });
-        return await response.json();
+
+        return await new ApiResponse(response);
     }
 
     static async uploadFile(file){

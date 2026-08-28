@@ -3,7 +3,7 @@ from ..packets.packet import Packet
 import config
 from .websocket_frame import WebSocketFrame
 from ..utils.json_parser import JSONParser
-from ..user.user_manager import UserManager
+from ..session.client_session_manager import ClientSessionManager as UserManager
 
 class WebSocketBroadcaster:
 

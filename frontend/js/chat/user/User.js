@@ -22,14 +22,8 @@ export default class User {
     }
 
     static fromData(data){
-        const contacts = [];
-        const raw_contacts = JSON.parse(data["contacts"]);
-        raw_contacts.forEach(contact_ => {
-            contacts[contact_] = new Contact(contact_);
-        });
         return new User(
-            data["username"],
-            contacts
+            data["username"]
         )
     }
 
@@ -42,7 +36,14 @@ export default class User {
     }
 
     getContact(username){
-        return this.#contacts[username];
+        return this.#contacts[username] ?? null;
+    }
+
+    addContact(contact){
+        if(contact.getUsername() in this.#contacts){
+            return;
+        }
+        this.#contacts[contact.getUsername()] = contact;
     }
 
     getCurrentRoom(){

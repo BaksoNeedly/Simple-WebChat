@@ -1,4 +1,4 @@
-from .room import Room
+from ...models.room import Room
 
 class PrivateRoom(Room):
 

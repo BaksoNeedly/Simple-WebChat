@@ -10,13 +10,13 @@
 }
 
 a {
-    color: rgb(23, 118, 225);
+    color: #4f46e5;
     text-decoration: none;
     transition: 0.2s ease;
 }
 
 a:hover {
-    transform: scale(1.05);
+    color: #3730a3;
 }
 
 .action-buttons {
@@ -27,33 +27,41 @@ a:hover {
 
 .button-1 {
     width: 100%;
-    padding: 12px;
+    padding: 13px 16px;
     border: none;
-    border-radius: 4px;
+    border-radius: 12px;
     color: white;
-    background-color: rgb(23, 118, 225);
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    font-size: 14px;
+    font-weight: 700;
     cursor: pointer;
     transition: 0.2s ease;
 }
 
 .button-1:hover {
-    background-color: rgb(96, 167, 248);;
-    transform: scale(1.03);
+    background: linear-gradient(135deg, #818cf8, #6366f1);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(79, 70, 229, .24);
 }
 
 .button-2 {
     width: 100%;
-    padding: 12px;
-    border: 1px solid lightgray;
-    background-color: white;
-    border-radius: 4px;
+    padding: 13px 16px;
+    border: 1px solid #e4e7ec;
+    background-color: #fff;
+    border-radius: 12px;
+    color: #475467;
+    font-size: 13px;
+    font-weight: 600;
     cursor: pointer;
     transition: 0.2s ease;
 }
 
 .button-2:hover {
     background-color: rgb(226, 226, 226);
-    transform: scale(1.03);
+    transform: translateY(-2px);
+    border-color: #c7d2fe;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, .08);
 }
 
 .button-3 {
@@ -78,19 +86,35 @@ a:hover {
 
 .input-1 {
     width: 100%;
-    padding: 12px 12px;
-    border: 1px solid lightgray;
-    border-radius: 4px;
+    padding: 13px 14px;
+    border: 1px solid #d0d5dd;
+    border-radius: 11px;
     transition: 0.2s ease;
-    font-size: 13px;
+    font-size: 14px;
+    color: #101828;
+    background: #fcfcfd;
 }
 
 .input-1:hover {
-    transform: scale(1.03);
+    border-color: #a5b4fc;
+}
+
+.input-1:focus {
+    outline: none;
+    border-color: #6366f1;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, .13);
+}
+
+.input-1::placeholder { color: #98a2b3; }
+
+input[type="checkbox"] {
+    accent-color: #4f46e5;
 }
 
 .divider hr {
-    color: lightgray;
+    border: 0;
+    border-top: 1px solid #eaecf0;
 }
 
 .or-divider {
@@ -102,7 +126,14 @@ a:hover {
 
 .or-divider hr {
     width: 100%;
-    color: lightgray
+    border: 0;
+    border-top: 1px solid #eaecf0;
+}
+
+.or-divider p {
+    color: #98a2b3;
+    font-size: 11px;
+    font-weight: 700;
 }
 
 .textarea-1 {

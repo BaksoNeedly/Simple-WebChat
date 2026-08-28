@@ -1,0 +1,12 @@
+.verification-copy { text-align: center; line-height: 1.6; max-width: 330px; }
+.verification-copy strong { color: #344054; font-weight: 600; }
+.verification-body, .verification-footer { display: flex; flex-direction: column; gap: 22px; }
+.code-fields { display: flex; justify-content: center; gap: 10px; }
+.code-input { width: 48px; height: 56px; padding: 0; border: 1px solid #d0d5dd; border-radius: 11px; background: #fcfcfd; color: #101828; font-size: 22px; font-weight: 700; text-align: center; transition: .2s ease; }
+.code-input:hover { border-color: #a5b4fc; }
+.code-input:focus { outline: none; border-color: #6366f1; background: #fff; box-shadow: 0 0 0 4px rgba(99, 102, 241, .13); }
+.resend { text-align: center; color: #667085; }
+.resend button { border: 0; padding: 0; background: none; color: #4f46e5; font: inherit; font-weight: 600; cursor: pointer; }
+.resend button:disabled { color: #98a2b3; cursor: not-allowed; }
+.verification-message { min-height: 18px; color: #d92d20; text-align: center; }
+@media (max-width: 420px) { .code-fields { gap: 7px; } .code-input { width: 42px; height: 52px; } }

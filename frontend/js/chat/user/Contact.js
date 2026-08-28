@@ -8,6 +8,13 @@ export default class Contact {
         this.#username = username;
     }
 
+    toData(){
+        return  {
+            username: this.#username,
+            type: "contact"
+        }
+    }
+
     getUsername(){
         return this.#username;
     }

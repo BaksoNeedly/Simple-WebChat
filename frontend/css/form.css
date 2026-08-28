@@ -6,12 +6,17 @@ body {
     justify-content: center;
     align-items: center;
 
-    padding: 20px;
-    background-color: rgb(247, 244, 244);
+    padding: 24px;
+    color: #172033;
+    background:
+        radial-gradient(circle at 10% 10%, rgba(99, 102, 241, .18), transparent 32%),
+        radial-gradient(circle at 90% 90%, rgba(14, 165, 233, .16), transparent 34%),
+        #f5f7fb;
 }
 
 p {
     font-size: 13px;
+    color: #667085;
 }
 
 a {
@@ -22,21 +27,33 @@ a {
     /* box-sizing: border-box; */
     /* width: min(500px, 100%); */
     width: 100%;
-    max-width: 450px;
-    background: white;
+    max-width: 430px;
+    background: rgba(255, 255, 255, .94);
     display: flex;
     flex-direction: column;
-    padding: 30px 30px;
-    gap: 20px;
-    border: 1px solid lightgray;
-    border-radius: 4px;
+    padding: 38px;
+    gap: 22px;
+    border: 1px solid rgba(255, 255, 255, .85);
+    border-radius: 24px;
+    box-shadow: 0 24px 70px rgba(30, 41, 59, .14);
+    backdrop-filter: blur(12px);
 }
 
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px
+    gap: 8px;
+}
+
+.title {
+    color: #111827;
+    font-size: 28px;
+    letter-spacing: -.6px;
+}
+
+.sub-title {
+    color: #667085;
 }
 
 .card-form {
@@ -48,7 +65,14 @@ a {
 .field {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
+}
+
+.field p {
+    color: #344054;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .2px;
 }
 
 .options {
@@ -58,7 +82,7 @@ a {
 }
 
 .remember-me:hover {
-    transform: scale(1.05);
+    transform: translateX(2px);
 }
 
 .remember-me {
@@ -66,4 +90,13 @@ a {
     gap: 8px;
     align-items: center;
     transition: 0.2s ease;
+}
+
+.remember-me p {
+    color: #667085;
+}
+
+@media (max-width: 520px) {
+    body { padding: 14px; }
+    .card { padding: 28px 22px; border-radius: 20px; }
 }

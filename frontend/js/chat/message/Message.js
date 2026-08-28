@@ -6,17 +6,20 @@ export default class Message {
     #timestamp;
     #sender;
     #file = null;
+    #isRead = false;
 
     constructor(
         content,
         timestamp,
         file = null,
-        sender = ""
+        sender = "",
+        is_read = false
     ){
         this.#content = content;
         this.#timestamp = timestamp;
         this.#file = file;
         this.#sender = sender;
+        this.#isRead = is_read
     }
 
     static fromData(data){
@@ -24,7 +27,8 @@ export default class Message {
             data["content"],
             data["timestamp"],
             FilePacket.fromData(data["file"]),
-            data["sender"]
+            data["sender"],
+            data["is_read"]
         );
     }
 
@@ -39,6 +43,7 @@ export default class Message {
             timestamp: this.#timestamp,
             file: file ? filePacket.toData() : null,
             sender: this.#sender,
+            is_read: this.#isRead,
             type: "message"
         }
     }
@@ -57,5 +62,13 @@ export default class Message {
 
     getSender(){
         return this.#sender;
-    }    
+    }
+
+    isRead(){
+        return this.#isRead;
+    }
+
+    markAsRead(){
+        this.#isRead = true;
+    }
 }

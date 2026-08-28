@@ -4,169 +4,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/chat.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="../css/chat.css" rel="stylesheet">
 </head>
 <body>
-
-    <div id="new-chat-container" class="new-chat-container hidden">
-        <div class="new-chat-package">
-            <div class="new-chat-header">
-                <h2>New Chat</h2>
-                <div class="circle-icon">
-                    <svg class="new-chat-cancel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#706b6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    <div class="container">
+        <div class="overlay new-chat-overlay hidden">
+            <div class="new-chat">
+                <header>
+                    <p class="title">New Chat</p>
+                    <p class="label hidden"></p>
+                    <div class="user hidden">
+                        <img class="avatar" src="../img/user_icon.jpg">
+                        <div class="content">
+                            <p class="name">Luiz Febrian</p>
+                        </div>
+                        <svg class="add-btn icon-btn-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-plus-icon lucide-user-round-plus"><path d="M2 21a8 8 0 0 1 13.292-6"/><circle cx="10" cy="8" r="5"/><path d="M19 16v6"/><path d="M22 19h-6"/></svg>
+                    </div>
+                </header>
+                <div class="input-box">
+                    <input class="input-1 input" placeholder="Search new contact...">
                 </div>
-            </div>
-            <p class="new-chat-label"></p>
-            <div class="divider">
-                <hr>
-            </div>
-            <div class="new-chat-body">
-                <h4>Start a chat with</h4>
-                <input class="input-1 new-chat-input" placeholder="Enter usename or group name ...">
-            </div>            
-            <div class="divider">
-                <hr>
-            </div>
-            <div class="new-chat-footer">
-                <button class="button-2 new-chat-cancel">Cancel</button>
-                <button class="button-1 start-new-chat">Start Chat</button>
+                <footer>
+                    <a class="btn-5 cancel-btn">Cancel</a>
+                    <a class="btn-1 search-btn">Search</a>
+                </footer>
             </div>
         </div>
-    </div>
-    
-    <div class="container">
+        <div class="overlay settings-overlay hidden">
+            <div class="settings-panel">
+                <header>
+                    <p class="title">Settings</p>
+                    <button class="settings-close icon-btn-2" type="button" aria-label="Close settings">×</button>
+                </header>
+                <div class="settings-body">
+                    <div class="settings-profile">
+                        <img src="../img/user_icon.jpg" alt="Profile">
+                        <div><p class="name">User</p><p class="status offline">OFFLINE</p></div>
+                    </div>
+                    <button class="verify-email-btn settings-action" type="button"><span class="settings-action-icon">✉</span><span><strong>Verify email</strong><small>Confirm your email address</small></span><span class="settings-chevron">›</span></button>
+                    <button class="logout-btn settings-action" type="button"><span class="settings-action-icon">↪</span><span><strong>Log out</strong><small>Sign out from this account</small></span><span class="settings-chevron">›</span></button>
+                    <button class="reset-account-btn settings-action" type="button"><span class="settings-action-icon">↻</span><span><strong>Reset account</strong><small>Reset your account preferences</small></span><span class="settings-chevron">›</span></button>
+                    <button class="delete-account-btn settings-action danger" type="button"><span class="settings-action-icon">⌫</span><span><strong>Delete account</strong><small>This action cannot be undone</small></span><span class="settings-chevron">›</span></button>
+                </div>
+                <footer><button class="btn-5 settings-close" type="button">Close</button></footer>
+            </div>
+        </div>
         <div class="sidebar">
-            <div class="header">
-                <h2>Chat</h2>
-            </div>
-            <button id="new-chat" class="button-1">+ New Chat</button>
-            <div class="groups-section">
-                <p>Groups</p>
-                <div class="groups-list">
-                    <a id="group-chat" class="group-chat">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle-icon lucide-message-circle"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></svg>
-                        <p id="group-name">General Chat</p>
-                    </a>
+        <!-- <div class="sidebar hidden"> -->
+            <header>
+                <div class="title-box">
+                    <p class="title">Chat</p>
                 </div>
-            </div>
-            <div class="users-section">
-                <p>Users</p>
-                <div class="users-list">
-                    <!-- <a class="user-2-room">
-                        <img src="../img/user_icon.jpg" class="user-profile-icon">
-                        <div class="user-2-details">
-                            <p class="user-2-name">Luiz</p>
-                            <p class="user-2-status">Online</p>
-                        </div>
-                    </a> -->
+                <a class="btn-1 new-chat-btn">+ New Chat</a>
+            </header>
+            <nav>
+                <div class="btn-2 chats-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle-more-icon lucide-message-circle-more"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M16 12h.01"/></svg>
+                    <p>Chats</p>
                 </div>
-            </div>
-            <div class="user-profile">
-                <div class="user-info">
-                        <img src="../img/user_icon.jpg" class="user-profile-icon">
-                        <p class="username">{{USERNAME}}</p>
-                </div>                
-                <svg class="profile-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
-            </div>
-        </div>        
-        <div id="chat-area" class="chat-area hidden">
-        <!-- <div id="chat-area" class="chat-area "> -->
-            <div class="chat-header">
-                <div class="chat-header-left">
-                    <svg class="icon pointer invert chat-exit" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
-                    <h2 class="chat-title">{{TITLE}}</h2>
+                <div class="btn-2 groups-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+                    <p>Groups</p>
                 </div>
-                <div class="chat-header-right">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round-icon lucide-users-round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>
-                    <p id="online-users" class="online-count">{{ONLINE_USERS}}</p>
+                <div class="btn-2 users-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-user-round-icon lucide-square-user-round"><path d="M18 21a6 6 0 0 0-12 0"/><circle cx="12" cy="11" r="4"/><rect width="18" height="18" x="3" y="3" rx="2"/></svg>
+                    <p>Users</p>
                 </div>
-            </div>
-            <div id="message-area" class="message-area">
-                <div class="message-1">
-                    <div class="message-meta">
+                <div class="btn-2 notifications-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell-icon lucide-bell"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg>
+                    <p>Notifications</p>
+                </div>
+                <div class="btn-2 settings-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-icon lucide-settings"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/><circle cx="12" cy="12" r="3"/></svg>
+                    <p>Settings</p>
+                </div>
+            </nav>
+            <footer>
+                <hr class="separator">
+                <div class="profile">
+                    <img class="icon" src="../img/user_icon.jpg" class="icon"></img>
+                    <div class="details">
+                        <p class="name">User</p>
+                        <p class="status offline">OFFLINE</p>
+                    </div>
+                    <div class="btn">
                         
-                        <div class="message-time">
-                            9.07 AM
-                        </div>
-                        <div class="file-box">
-                            <div class=file-content>
-                                <p>test.json</p>
-                                <p>3 MB</p>
-                            </div>                            
-                            <svg class="file-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-icon lucide-file"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/></svg>
-                        </div>
-                        <div class="message-content">                                                       
-                            <p>Hai nama aku luiz.</p>
-                        </div>                            
                     </div>
                 </div>
-                <div class="message-2">
-                    <img src="../img/user_icon.jpg" class="user-profile-icon">
-                    <div class="message-meta">
-                        <div class="message-header">
-                            <div class="message-username">
-                                Luiz Febrian
-                            </div>
-                            <div class="message-time">
-                                9.07 AM
-                            </div>
-                        </div>
-                        <div class="file-box">
-                            <div class=file-content>
-                                <p>test.json</p>
-                                <p>3 MB</p>
-                            </div>                            
-                            <svg class="file-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-icon lucide-file"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/></svg>
-                        </div>
-                        <div class="message-content">
-                            <p>Hello Everyone.</p>
-                        </div> 
-                    </div>                                               
+            </footer>
+        </div>
+        <!-- <div class="chat-list"> -->
+        <div class="chat-list hidden">
+            <header>
+                <button class="chat-list-return icon-btn-2" type="button" aria-label="Return to sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m15 18-6-6 6-6"/>
+                    </svg>
+                </button>
+                <p class="title">All Chats</p>
+                <div class="input-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+                    <input class="inherit" type="text" placeholder="Search chats...">
                 </div>
-                <div class="join-message">
-                    <hr>
-                    <p>User joined</p>
-                    <hr>
+            </header>
+            <div class="users">
+                <!-- <div class="user">
+                    <img class="avatar" src="../img/user_icon.jpg">
+                    <div class="content">
+                        <p class="name">Chelly</p>
+                        <p class="message">Hey Luiz! How are you?</p>
+                    </div>
+                    <div class="right">
+                        <div class="meta">
+                            <p class="time">10:42 AM</p>
+                        </div>
+                        <span class="unread-count" aria-label="1 unread message">1</span>
+                    </div>                        
                 </div>
+                <div class="user">
+                    <img class="avatar" src="../img/user_icon.jpg">
+                    <div class="content">
+                        <p class="name">Chelly</p>
+                        <p class="message">Hey Luiz! How are you?</p>
+                    </div>
+                    <div class="right">
+                        <div class="meta">
+                            <p class="time">10:42 AM</p>
+                        </div>
+                        <div class="unread">
+                            <span class="unread-count" aria-label="1 unread message">1</span>
+                        </div>
+                    </div>                        
+                </div> -->
             </div>
-            <div class="chat-footer">
-                <div class="chat-input-wrapper">
-                    <div class="attached-file-container hidden">
-                        <div class="cancel-container">
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-                        </div> 
-                        <div class="file-icon-container">
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-code-corner-icon lucide-file-code-corner"><path d="M4 12.15V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2h-3.35"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="m5 16-3 3 3 3"/><path d="m9 22 3-3-3-3"/></svg>
-                        </div>
-                        <div class="file-meta-container">
-                            <p class="file-name">test.json</p>
-                        </div>
-                    </div>
+            <footer>
 
-                    <div class="chat-input-container">
-                        <div class="attach-container">
-                            <input type="file" class="attach-input" id="attach-input" style="display: none;">
-                            <label for="attach-input" class="attach-btn">
-                                <svg class="icon attach" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"/>
-                                </svg>
-                            </label>
+            </footer>
+        </div>
+        <!-- <div class="chat-area"> -->
+        <div class="chat-area hidden">
+            <header>
+                <div class="left">
+                    <svg class="return icon-btn-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+                    <div class="user">
+                        <img class="avatar" src="../img/user_icon.jpg">
+                        <div class="content">
+                            <p class="name title">Chelly</p>
+                            <p class="status online">Online</p>
                         </div>
-                        <textarea class="textarea-1 chat-input" placeholder="Type a message..."></textarea>
-                        <button id="send-button" class="button-3 chat-send-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send">
-                                <path d="m22 2-7 20-4-9-9-4Z"/>
-                                <path d="M22 2 11 13"/>
-                            </svg>
-                        </button>
                     </div>
-                    
-                </div>                                                
+                </div>                
+                <div class="actions">
+                    <!-- <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg> -->
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video-icon lucide-video"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+                    <!-- <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info-icon lucide-info"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg> -->
+                </div>
+            </header>
+            <div class="messages">
+                <!-- <div class="message-1">
+                    <p class="content">Hello Chelly! I'm good, thanks for asking!Hello Chelly! I'm good, thanks for asking!Hello Chelly! I'm good, thanks for asking!Hello Chelly! I'm good, thanks for asking!Hello Chelly! I'm good, thanks for asking!Hello Chelly! I'm good, thanks for asking!Hello Chelly! I'm good, thanks for asking!Hello Chelly! I'm good, thanks for asking!Hello Chelly! I'm good, thanks for asking!</p>
+                    <div class="right">
+                        <div class="meta">
+                            <p class="time">10.31 AM</p>
+                        </div>
+                        <svg class="status unread" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-check-icon lucide-check-check"><path d="M18 6 7 17l-5-5"/><path d="m22 10-7.5 7.5L13 16"/></svg>
+                    </div>                    
+                </div>
+
+                <div class="message-1">
+                    <p class="content">Hello</p>
+                    <div class="right">
+                        <div class="meta">
+                            <p class="time">10.31 AM</p>
+                        </div>
+                        <svg class="status unread" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-check-icon lucide-check-check"><path d="M18 6 7 17l-5-5"/><path d="m22 10-7.5 7.5L13 16"/></svg>
+                    </div>                    
+                </div>
+
+                <div class="message-2">
+                    <p class="content">Hello Chelly! I'm good, thanks for asking!</p>
+                    <div class="right">
+                        <div class="meta">
+                            <p class="time">10.31 AM</p>
+                        </div>
+                    </div>                    
+                </div> -->
             </div>
+            <footer>
+                <svg class="attach-btn icon-btn-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paperclip-icon lucide-paperclip"><path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"/></svg>
+                <div class="input-1 input-box">
+                    <textarea class="msg-input" placeholder="Type a message..."></textarea>
+                    <svg class="emoji-btn btn-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-face-grinning-icon lucide-face-grinning"><path d="M15 10V9"/><path d="M7.084 14.302a5.12 5.12 0 009.833 0 .24.24 0 00-.235-.302H7.32a.24.24 0 00-.235.302"/><path d="M9 10V9"/><circle cx="12" cy="12" r="10"/></svg>
+                </div>
+                <svg class="send-btn btn-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-horizontal-icon lucide-send-horizontal"><path d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z"/><path d="M6 12h16"/></svg>
+            </footer>
         </div>
     </div>
     <script type="module" src="../js/chat/Chat.js"></script>

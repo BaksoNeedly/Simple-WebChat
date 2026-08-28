@@ -11,7 +11,7 @@ export default class FilePacket {
     static fromData(data){
         if (!data) return null;
         return new FilePacket(
-            data["filename"]
+            data["file_name"]
         );
     }
 
